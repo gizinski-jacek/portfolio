@@ -6,7 +6,6 @@ interface Props {
 }
 
 const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
-	const [bigNav, setBigNav] = useState(false);
 	const [openMenu, setOpenMenu] = useState(false);
 
 	const dropMenu = () => {
@@ -15,21 +14,8 @@ const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
 
 	useEffect(() => {
 		const container = document.getElementById('app') as HTMLElement;
-		if (container.offsetWidth <= 768) {
-			setBigNav(false);
-		} else {
-			setBigNav(true);
-			setOpenMenu(false);
-		}
-	}, []);
-
-	useEffect(() => {
-		const container = document.getElementById('app') as HTMLElement;
 		const watchForResize = () => {
-			if (container.offsetWidth <= 768) {
-				setBigNav(false);
-			} else {
-				setBigNav(true);
+			if (container.offsetWidth >= 768) {
 				setOpenMenu(false);
 			}
 		};
@@ -37,15 +23,10 @@ const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
 		window.addEventListener('resize', watchForResize);
 
 		return () => window.removeEventListener('resize', watchForResize);
-	}, [setBigNav, setOpenMenu]);
+	}, [setOpenMenu]);
 
 	return (
-		<nav
-			id='nav'
-			className={`nav ${bigNav ? 'big_nav' : ''} ${
-				openMenu ? 'open_menu' : ''
-			}`}
-		>
+		<nav id='nav' className={`nav ${openMenu ? 'open_menu' : ''}`}>
 			<ul>
 				<li>
 					<a href='#home'>Home</a>
