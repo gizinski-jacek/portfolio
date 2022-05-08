@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import styles from '../styles/Nav.module.scss';
 
 interface Props {
 	theme: 'dark' | 'light';
@@ -26,7 +27,10 @@ const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
 	}, [setOpenMenu]);
 
 	return (
-		<nav id='nav' className={`nav ${openMenu ? 'open_menu' : ''}`}>
+		<nav
+			id='nav'
+			className={`${styles.nav} ${openMenu ? styles.open_menu : ''}`}
+		>
 			<ul>
 				<li>
 					<a href='#home'>Home</a>
@@ -44,15 +48,17 @@ const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
 					<a href='#contact'>Contact</a>
 				</li>
 				<li>
-					<div className='mode' onClick={() => toggleTheme()}>
+					<div className={styles.mode} onClick={() => toggleTheme()}>
 						Mode
-						<div className={`mode_slider ${theme}`}>
-							<div className={`mode_slider_circle ${theme}`}></div>
+						<div className={`${styles.mode_slider} ${styles[theme]}`}>
+							<div
+								className={`${styles.mode_slider_circle} ${styles[theme]}`}
+							></div>
 						</div>
 					</div>
 				</li>
 				<li>
-					<div className='ham_menu' onClick={() => dropMenu()}>
+					<div className={styles.ham_menu} onClick={() => dropMenu()}>
 						<span></span>
 						<span></span>
 						<span></span>

@@ -1,16 +1,17 @@
-import SectionHeader from './SectionHeader';
+import SectionHeader from './reusables/SectionHeader';
+import styles from '../styles/Contact.module.scss';
 
 const Contact = () => {
 	return (
-		<div id='contact' className='contact section'>
+		<div id='contact' className={`${styles.contact}`}>
 			<SectionHeader text={'Contact'} />
-			<div className='section_contact'>
+			<div className={styles.section_contact}>
 				<h3>Write me an email</h3>
-				<div className='container'>
+				<div className={styles.container}>
 					<a
 						href='mailto:jacektrg@gmail.com'
 						rel='noreferrer'
-						className='email contact_method'
+						className={`${styles.email} ${styles.contact_method}`}
 					>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
@@ -27,11 +28,11 @@ const Contact = () => {
 					</a>
 				</div>
 				<h3>or reach me through</h3>
-				<div className='container'>
+				<div className={styles.container}>
 					<a
 						href='https://github.com/gizinski-jacek'
 						rel='noreferrer'
-						className='github contact_method'
+						className={`${styles.github} ${styles.contact_method}`}
 					>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
@@ -49,7 +50,7 @@ const Contact = () => {
 					<a
 						href='https://www.linkedin.com/in/jacek-gizi%C5%84ski-ab684b239/'
 						rel='noreferrer'
-						className='linkedin contact_method'
+						className={`${styles.linkedin} ${styles.contact_method}`}
 					>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'

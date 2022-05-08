@@ -1,14 +1,15 @@
-import SectionHeader from './SectionHeader';
+import SectionHeader from './reusables/SectionHeader';
+import styles from '../styles/Skills.module.scss';
 
 const Skills = () => {
 	return (
-		<div id='skills' className='skills section'>
+		<div id='skills' className={styles.skills}>
 			<SectionHeader text={'Skills & Tools'} />
-			<div className='section_skills'>
-				<div className='front_end wrapper'>
+			<div className={styles.section_skills}>
+				<div className={`${styles.front_end} ${styles.container}`}>
 					<h3>Front-end</h3>
-					<div className='card'>
-						<div className='skill_item'>
+					<div className={styles.card}>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 32 32'
@@ -34,7 +35,7 @@ const Skills = () => {
 							</svg>
 							<h4>HTML</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 64 64'
@@ -76,7 +77,7 @@ const Skills = () => {
 							</svg>
 							<h4>CSS</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 64 64'
@@ -90,14 +91,14 @@ const Skills = () => {
 							</svg>
 							<h4>SASS</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 630 630'>
 								<rect width='630' height='630' fill='#f7df1e' />
 								<path d='m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z' />
 							</svg>
 							<h4>Javascript</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 64 64'
@@ -111,7 +112,7 @@ const Skills = () => {
 							</svg>
 							<h4>Typescript</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 32 32'
@@ -135,10 +136,10 @@ const Skills = () => {
 						</div>
 					</div>
 				</div>
-				<div className='back_end wrapper'>
+				<div className={`${styles.back_end} ${styles.container}`}>
 					<h3>Back-end</h3>
-					<div className='card'>
-						<div className='skill_item'>
+					<div className={styles.card}>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 32 32'
@@ -151,7 +152,7 @@ const Skills = () => {
 							</svg>
 							<h4>NodeJS</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 32 32'
@@ -162,7 +163,7 @@ const Skills = () => {
 							</svg>
 							<h4>Express</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 64 64'
@@ -283,7 +284,7 @@ const Skills = () => {
 							</svg>
 							<h4>Pug</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 32 32'
@@ -305,11 +306,11 @@ const Skills = () => {
 							</svg>
 							<h4>MongoDB</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<img src='./icons/mongoose.png' alt='Mongoose' />
 							<h4>Mongoose</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 32 32'
@@ -335,16 +336,16 @@ const Skills = () => {
 							</svg>
 							<h4>Firebase</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<img src='./icons/passportjs.png' alt='PassportJS' />
 							<h4>PassportJS</h4>
 						</div>
 					</div>
 				</div>
-				<div className='miscellaneous wrapper'>
+				<div className={`${styles.miscellaneous} ${styles.container}`}>
 					<h3>Miscellaneous</h3>
-					<div className='card'>
-						<div className='skill_item'>
+					<div className={styles.card}>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 32 32'
@@ -358,7 +359,7 @@ const Skills = () => {
 							</svg>
 							<h4>Git</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 16 16'
@@ -372,7 +373,7 @@ const Skills = () => {
 							</svg>
 							<h4>Github</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 32 32'
@@ -388,7 +389,7 @@ const Skills = () => {
 							</svg>
 							<h4>npm</h4>
 						</div>
-						<div className='skill_item'>
+						<div className={styles.skill_item}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 5.12 5.12'
