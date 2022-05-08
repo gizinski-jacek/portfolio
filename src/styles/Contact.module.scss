@@ -1,0 +1,49 @@
+@use './variables';
+
+.contact {
+	.section_contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin: 2rem;
+	}
+
+	.container:not(:first-child) {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 1rem;
+	}
+
+	.contact_method {
+		display: block;
+		margin: 1rem;
+		color: var(--secondary);
+	}
+
+	svg {
+		width: 3rem;
+		height: 3rem;
+		fill: var(--secondary);
+	}
+
+	.email {
+		color: var(--secondary);
+
+		svg {
+			width: 3rem;
+			height: 3rem;
+			fill: var(--secondary);
+		}
+	}
+
+	.linkedin {
+		path {
+			fill: var(--secondary);
+		}
+
+		path:last-child {
+			fill: var(--primary);
+		}
+	}
+}

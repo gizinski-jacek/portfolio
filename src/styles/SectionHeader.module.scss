@@ -1,0 +1,22 @@
+@use './variables';
+
+.section_header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 1rem 2rem;
+	white-space: nowrap;
+
+	h2 {
+		margin: 0 2rem;
+	}
+
+	hr {
+		flex: 1;
+		padding: 2px;
+		border: none;
+		background-color: var(--gold);
+		max-width: 25%;
+		margin: auto 0;
+	}
+}
