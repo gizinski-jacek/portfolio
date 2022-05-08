@@ -47,18 +47,14 @@
 			margin: 0.5rem;
 		}
 	}
-}
 
-@media only screen and (min-width: 620px) {
-	.skills {
+	@media only screen and (min-width: 620px) {
 		.card {
 			max-width: 400px;
 		}
 	}
-}
 
-@media only screen and (min-width: 768px) {
-	.skills {
+	@media only screen and (min-width: 768px) {
 		.section_skills {
 			flex-direction: row;
 			align-items: flex-start;
