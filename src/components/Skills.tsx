@@ -6,7 +6,7 @@ const Skills = () => {
 		<div id='skills' className={styles.skills}>
 			<SectionHeader text={'Skills & Tools'} />
 			<div className={styles.section_skills}>
-				<div className={`${styles.front_end} ${styles.container}`}>
+				<div className={styles.container}>
 					<h3>Front-end</h3>
 					<div className={styles.card}>
 						<div className={styles.skill_item}>
@@ -136,7 +136,7 @@ const Skills = () => {
 						</div>
 					</div>
 				</div>
-				<div className={`${styles.back_end} ${styles.container}`}>
+				<div className={styles.container}>
 					<h3>Back-end</h3>
 					<div className={styles.card}>
 						<div className={styles.skill_item}>
@@ -342,7 +342,7 @@ const Skills = () => {
 						</div>
 					</div>
 				</div>
-				<div className={`${styles.miscellaneous} ${styles.container}`}>
+				<div className={styles.container}>
 					<h3>Miscellaneous</h3>
 					<div className={styles.card}>
 						<div className={styles.skill_item}>
