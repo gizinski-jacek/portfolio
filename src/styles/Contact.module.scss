@@ -22,7 +22,22 @@
 	.contact_method {
 		display: block;
 		margin: 1rem;
+		padding: 0.5rem;
 		color: var(--secondary);
+
+		h3 {
+			margin: 0 auto;
+			width: fit-content;
+			padding-bottom: 0.5rem;
+			transition: 0.25s ease;
+			border-bottom: 2px solid var(--primary);
+		}
+
+		&:hover h3 {
+			color: var(--gold);
+			border-bottom: 2px solid var(--gold);
+			fill: var(--gold);
+		}
 	}
 
 	svg {
@@ -38,11 +53,24 @@
 			height: 3rem;
 			fill: var(--secondary);
 		}
+
+		path {
+			transition: 0.25s ease;
+		}
+
+		&:hover path {
+			fill: var(--gold);
+		}
 	}
 
 	.github {
 		path:last-child {
+			transition: 0.25s ease;
 			fill: var(--secondary);
+		}
+
+		&:hover path {
+			fill: var(--gold);
 		}
 	}
 
@@ -53,6 +81,10 @@
 
 		path:last-child {
 			fill: var(--primary);
+		}
+
+		&:hover path:first-child {
+			fill: var(--gold);
 		}
 	}
 }
