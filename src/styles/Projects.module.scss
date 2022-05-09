@@ -1,0 +1,112 @@
+@use './variables';
+
+.projects {
+	margin: 2rem;
+
+	.section_projects {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.project_item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 1rem;
+		padding: 1rem;
+		background-color: var(--gray);
+
+		h3 {
+			white-space: nowrap;
+		}
+
+		img {
+			width: 5rem;
+			height: 5rem;
+		}
+	}
+
+	.projects_controls {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		user-select: none;
+	}
+
+	.links {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		order: 10;
+	}
+
+	.button {
+		flex: 1;
+		text-align: center;
+		padding: 0.75rem 1rem;
+		margin: 1rem;
+		border-radius: 5rem;
+		color: variables.$black;
+		transition: 0.25s ease;
+		background-color: var(--gold);
+		border: 1px solid transparent;
+		white-space: nowrap;
+	}
+
+	.button:hover {
+		border-color: var(--secondary);
+		box-shadow: 0 0 0.25rem 0 var(--secondary);
+		filter: brightness(110%);
+	}
+
+	.button:active {
+		filter: brightness(120%);
+	}
+
+	.arrow {
+		margin: 1rem;
+	}
+
+	.previous,
+	.next {
+		margin: 1rem;
+		font-size: 1.5rem;
+		padding: 0.75rem;
+		transition: 0.25s ease;
+		border-radius: 4px;
+		color: var(--secondary);
+		cursor: pointer;
+	}
+
+	.previous:hover,
+	.next:hover {
+		border-color: var(--secondary);
+		box-shadow: 0 0 0.25rem 0 var(--secondary);
+		background-color: var(--gray);
+	}
+
+	.previous:active,
+	.next:active {
+		filter: brightness(80%);
+	}
+
+	@media only screen and (min-width: 334px) {
+		.links {
+			order: initial;
+		}
+	}
+
+	@media only screen and (min-width: 478px) {
+		.links {
+			flex: initial;
+		}
+	}
+}
