@@ -5,6 +5,7 @@
 	top: 0;
 	right: 0;
 	z-index: 10;
+	user-select: none;
 
 	ul {
 		display: flex;
@@ -59,14 +60,14 @@
 
 	a:hover,
 	.mode:hover {
-		filter: brightness(115%);
-		border: 1px solid var(--secondary);
-		box-shadow: 0 0 0.5rem 0 var(--secondary);
+		filter: brightness(110%);
+		border-color: var(--secondary);
+		box-shadow: 0 0 0.25rem 0 var(--secondary);
 	}
 
 	a:active,
 	.mode:active {
-		filter: brightness(130%);
+		filter: brightness(120%);
 	}
 
 	.mode {
