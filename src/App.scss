@@ -1,9 +1,8 @@
 @use './styles/variables';
 
 :root {
-	font-family: 'Inconsolata', 'Gill Sans', 'Big Shoulders Text', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: 12px;
-	font-weight: 600;
 	overflow-y: auto;
 	scroll-behavior: smooth;
 }
@@ -31,7 +30,6 @@ h4 {
 a {
 	color: var(--primary);
 	text-decoration: none;
-	font-size: 1.25rem;
 }
 
 .app {
@@ -44,7 +42,7 @@ a {
 	flex-direction: column;
 }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 600px) {
 	:root {
 		font-size: 14px;
 	}
