@@ -1,11 +1,12 @@
 @use './variables';
 
-.section_header {
+.header {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	margin: 1rem 2rem;
 	white-space: nowrap;
+	user-select: none;
 
 	h2 {
 		margin: 0 2rem;
