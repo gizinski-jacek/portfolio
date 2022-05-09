@@ -52,8 +52,8 @@
 		flex: 1;
 		color: variables.$black;
 		background-color: var(--gold);
-		padding: 1rem;
-		border: 1px solid transparent;
+		padding: 0.75rem 1rem;
+		border: 2px solid transparent;
 		transition: 0.25s ease;
 		cursor: pointer;
 	}
@@ -62,7 +62,6 @@
 	.mode:hover {
 		filter: brightness(110%);
 		border-color: var(--secondary);
-		box-shadow: 0 0 0.25rem 0 var(--secondary);
 	}
 
 	a:active,
@@ -172,9 +171,13 @@
 		}
 	}
 
-	@media only screen and (min-width: 520px) {
+	@media only screen and (min-width: 600px) {
+		transition: 0.5s ease;
+		width: 100%;
+
 		ul {
 			flex-direction: row;
+			justify-content: flex-end;
 			align-items: center;
 		}
 
@@ -204,7 +207,15 @@
 			border-radius: 0.5rem;
 		}
 
+		a:hover,
+		.mode:hover {
+			box-shadow: 0 0 0.25rem 1px var(--secondary);
+		}
+
 		&.open_menu {
+			width: 100%;
+			background-color: variables.$red;
+
 			li:not(:last-child) {
 				transform-origin: top;
 				animation: rotateIn 0.5s ease forwards;
@@ -227,6 +238,9 @@
 	}
 
 	@media only screen and (min-width: 768px) {
+		width: 100%;
+		background-color: variables.$red;
+
 		ul {
 			flex-direction: row;
 		}
