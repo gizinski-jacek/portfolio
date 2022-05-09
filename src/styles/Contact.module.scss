@@ -7,6 +7,10 @@
 		align-items: center;
 		text-align: center;
 		margin: 2rem;
+
+		> h3 {
+			min-width: 100px;
+		}
 	}
 
 	.container:not(:first-child) {
@@ -24,7 +28,6 @@
 	svg {
 		width: 3rem;
 		height: 3rem;
-		fill: var(--secondary);
 	}
 
 	.email {
@@ -33,6 +36,12 @@
 		svg {
 			width: 3rem;
 			height: 3rem;
+			fill: var(--secondary);
+		}
+	}
+
+	.github {
+		path:last-child {
 			fill: var(--secondary);
 		}
 	}
