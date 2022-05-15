@@ -207,14 +207,9 @@
 			border-radius: 0.5rem;
 		}
 
-		a:hover,
-		.mode:hover {
-			box-shadow: 0 0 0.25rem 1px var(--secondary);
-		}
-
 		&.open_menu {
 			width: 100%;
-			background-color: variables.$red;
+			background-color: variables.$blue;
 
 			li:not(:last-child) {
 				transform-origin: top;
@@ -239,7 +234,7 @@
 
 	@media only screen and (min-width: 768px) {
 		width: 100%;
-		background-color: variables.$red;
+		background-color: variables.$blue;
 
 		ul {
 			flex-direction: row;
