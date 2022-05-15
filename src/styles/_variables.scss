@@ -1,15 +1,14 @@
 $black: rgb(0, 0, 0);
-$blue: rgba(0, 125, 200, 0.5);
-$red: rgb(200, 50, 50);
+$blue: rgba(0, 125, 200, 0.6);
 
-[theme-mode='light'] {
-	--primary: rgb(230, 230, 210);
+[data-theme-mode='light'] {
+	--primary: rgb(235, 235, 200);
 	--secondary: rgb(0, 50, 80);
-	--gold: rgb(210, 165, 0);
+	--gold: rgb(225, 175, 0);
 }
 
-[theme-mode='dark'] {
-	--primary: rgb(0, 20, 50);
-	--secondary: rgb(230, 230, 210);
-	--gold: rgb(235, 185, 0);
+[data-theme-mode='dark'] {
+	--primary: rgb(0, 50, 80);
+	--secondary: rgb(235, 235, 200);
+	--gold: rgb(200, 155, 0);
 }
