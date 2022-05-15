@@ -20,7 +20,7 @@ const App = () => {
 	};
 
 	return (
-		<div id='app' className='app' theme-mode={theme}>
+		<div id='app' className='app' data-theme-mode={theme}>
 			<Nav theme={theme} toggleTheme={toggleTheme} />
 			<Home />
 			<About />
