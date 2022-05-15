@@ -13,11 +13,11 @@ declare module 'react' {
 const Projects = () => {
 	const [slideBackward, setSlideBackward] = useState(0);
 	const [slideForward, setSlideForward] = useState(0);
-	const [earlierProject, setEarlierProject] = useState(projectList.length - 1);
-	const [previousProject, setPreviousProject] = useState(0);
-	const [currentProject, setCurrentProject] = useState(1);
-	const [nextProject, setNextProject] = useState(2);
-	const [laterProject, setLaterProject] = useState(3);
+	const [earlierProject, setEarlierProject] = useState(0);
+	const [previousProject, setPreviousProject] = useState(1);
+	const [currentProject, setCurrentProject] = useState(2);
+	const [nextProject, setNextProject] = useState(3);
+	const [laterProject, setLaterProject] = useState(4);
 
 	const previousSlide = () => {
 		setSlideForward(1);
@@ -38,7 +38,7 @@ const Projects = () => {
 		setSlideBackward(1);
 		setTimeout(() => {
 			setEarlierProject(previousProject);
-			setPreviousProject(earlierProject);
+			setPreviousProject(currentProject);
 			setCurrentProject(nextProject);
 			setNextProject(laterProject);
 			if (laterProject >= projectList.length - 1) {
