@@ -27,12 +27,33 @@
 		border-radius: 0.5rem;
 		text-align: center;
 
+		h3 {
+			margin-top: 1rem;
+			white-space: nowrap;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
 		&.earlierProject {
 			transform: translateX(-4rem);
 			opacity: 0;
 
 			&[data-slideforward='1'] {
 				animation: earlierToPrevious 0.75s;
+			}
+		}
+
+		@keyframes earlierToPrevious {
+			0% {
+				transform: translateX(-4rem);
+			}
+
+			100% {
+				transform: translateX(calc(100% - 2rem));
+				opacity: 0.5;
 			}
 		}
 
@@ -46,51 +67,6 @@
 
 			&[data-slideforward='1'] {
 				animation: previousToCurrent 0.75s;
-			}
-		}
-
-		&.currentProject {
-			opacity: 1;
-
-			&[data-slidebackward='1'] {
-				animation: currentToPrevious 0.75s;
-			}
-
-			&[data-slideforward='1'] {
-				animation: currentToNext 0.75s;
-			}
-		}
-
-		&.nextProject {
-			transform: translateX(2rem);
-			opacity: 0.5;
-
-			&[data-slidebackward='1'] {
-				animation: nextToCurrent 0.75s;
-			}
-
-			&[data-slideforward='1'] {
-				animation: nextToLater 0.75s;
-			}
-		}
-
-		&.laterProject {
-			transform: translateX(4rem);
-			opacity: 0;
-
-			&[data-slidebackward='1'] {
-				animation: laterToNext 0.75s;
-			}
-		}
-
-		@keyframes earlierToPrevious {
-			0% {
-				transform: translateX(-4rem);
-			}
-
-			100% {
-				transform: translateX(calc(100% - 2rem));
-				opacity: 0.5;
 			}
 		}
 
@@ -116,6 +92,18 @@
 			}
 		}
 
+		&.currentProject {
+			opacity: 1;
+
+			&[data-slidebackward='1'] {
+				animation: currentToPrevious 0.75s;
+			}
+
+			&[data-slideforward='1'] {
+				animation: currentToNext 0.75s;
+			}
+		}
+
 		@keyframes currentToPrevious {
 			0% {
 				transform: translateX(0);
@@ -135,6 +123,19 @@
 			100% {
 				transform: translateX(calc(100% + 2rem));
 				opacity: 0.5;
+			}
+		}
+
+		&.nextProject {
+			transform: translateX(2rem);
+			opacity: 0.5;
+
+			&[data-slidebackward='1'] {
+				animation: nextToCurrent 0.75s;
+			}
+
+			&[data-slideforward='1'] {
+				animation: nextToLater 0.75s;
 			}
 		}
 
@@ -159,6 +160,15 @@
 			}
 		}
 
+		&.laterProject {
+			transform: translateX(4rem);
+			opacity: 0;
+
+			&[data-slidebackward='1'] {
+				animation: laterToNext 0.75s;
+			}
+		}
+
 		@keyframes laterToNext {
 			0% {
 				transform: translateX(4rem);
@@ -168,16 +178,6 @@
 				transform: translateX(calc(-100% + 2rem));
 				opacity: 0.5;
 			}
-		}
-
-		h3 {
-			margin-top: 1rem;
-			white-space: nowrap;
-		}
-
-		img {
-			width: 100%;
-			height: 100%;
 		}
 
 		@media only screen and (min-width: 600px) {
