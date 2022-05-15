@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import SectionHeader from './reusables/SectionHeader';
 import { projectList } from './data/projectList';
-import styles from '../styles/Project.module.scss';
+import styles from '../styles/Projects.module.scss';
 
 declare module 'react' {
 	export interface HTMLAttributes<T> {

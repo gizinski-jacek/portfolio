@@ -1,5 +1,5 @@
 import SectionHeader from './reusables/SectionHeader';
-import styles from '../styles/Skill.module.scss';
+import styles from '../styles/Skills.module.scss';
 
 const Skills = () => {
 	return (
