@@ -206,13 +206,13 @@
 		order: 10;
 	}
 
-	@media only screen and (min-width: 303px) {
+	@media only screen and (min-width: 299px) {
 		.links {
 			order: initial;
 		}
 	}
 
-	@media only screen and (min-width: 433px) {
+	@media only screen and (min-width: 427px) {
 		.links {
 			flex: initial;
 		}
