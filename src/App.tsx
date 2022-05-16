@@ -8,10 +8,12 @@ import Contact from './components/Contact';
 import useLocalStorage from 'use-local-storage';
 
 const App = () => {
-	const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+	const defaultLight = window.matchMedia(
+		'(prefers-color-scheme: light)'
+	).matches;
 	const [theme, setTheme] = useLocalStorage<'dark' | 'light'>(
 		'theme',
-		defaultDark ? 'dark' : 'light'
+		defaultLight ? 'light' : 'dark'
 	);
 
 	const toggleTheme = () => {
