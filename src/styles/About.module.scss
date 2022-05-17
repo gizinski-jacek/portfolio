@@ -1,0 +1,59 @@
+@use './variables';
+
+.about {
+	margin: 2rem;
+
+	p {
+		margin: 2rem 1rem;
+		text-align: justify;
+
+		img {
+			width: 3rem;
+			height: 3rem;
+		}
+
+		&:nth-of-type(1) {
+			img {
+				margin: 0.5rem;
+				margin-right: 0;
+				float: right;
+			}
+		}
+
+		&:nth-of-type(2) {
+			img:first-child {
+				margin: 0.5rem;
+				margin-left: 0;
+				float: left;
+			}
+
+			img:last-child {
+				margin: 0.5rem;
+				margin-right: 0;
+				float: right;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 600px) {
+		p {
+			max-width: 50%;
+			margin: 3rem 1rem;
+
+			&:nth-of-type(1) {
+				margin-right: auto;
+			}
+
+			&:nth-of-type(2) {
+				margin-left: auto;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		p {
+			max-width: 75%;
+			margin: 4rem auto;
+		}
+	}
+}
