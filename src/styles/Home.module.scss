@@ -1,0 +1,26 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+
+	h1 {
+		margin: 1rem;
+		font-weight: 600;
+		text-align: center;
+		text-transform: uppercase;
+		font-style: italic;
+	}
+
+	h2 {
+		margin: 1rem;
+		font-weight: 600;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	span {
+		margin: 0.5rem;
+	}
+}
