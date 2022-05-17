@@ -21,8 +21,6 @@
 	a {
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-end;
-		text-align: end;
 	}
 
 	li:first-child {
@@ -34,21 +32,23 @@
 	li:not(:last-child) {
 		transition: 0.5s ease;
 		transform-origin: right;
-		transform: rotateY(90deg);
-		animation: rotateOut 0.5s ease forwards;
+		transform: translateX(100%);
+		animation: slideOut 0.5s ease forwards;
 	}
 
-	@keyframes rotateOut {
+	@keyframes slideOut {
 		0% {
-			transform: rotateY(0);
+			transform: translateX(0);
 		}
 
 		100% {
-			transform: rotateY(90deg);
+			transform: translateX(100%);
 		}
 	}
 
 	li:last-child {
+		width: fit-content;
+		align-self: flex-end;
 		margin: 0.5rem 0.75rem;
 		order: -1;
 	}
@@ -58,7 +58,7 @@
 		flex: 1;
 		color: variables.$black;
 		background-color: var(--gold);
-		padding: 0.75rem 1rem;
+		padding: 0.75rem;
 		border: 2px solid transparent;
 		transition: 0.25s ease;
 		cursor: pointer;
@@ -79,16 +79,11 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
-		border-bottom-left-radius: 0.25rem;
 
 		&.dark {
 			.moon {
 				opacity: 1;
 				transform: rotate(0);
-			}
-
-			.mode_slider_circle {
-				transform: translateX(0);
 			}
 		}
 
@@ -99,7 +94,7 @@
 			}
 
 			.mode_slider_circle {
-				transform: translateX(1rem);
+				transform: rotateY(180deg);
 			}
 		}
 	}
@@ -122,22 +117,61 @@
 
 	.mode_slider {
 		margin-left: 0.5rem;
-		position: relative;
-		width: 2.1rem;
-		height: 1.1rem;
-		padding: 0.2rem 0.15rem;
 		border-radius: 1rem;
 		background-color: var(--primary);
 		transition: 0.5s ease;
 	}
 
 	.mode_slider_circle {
-		position: absolute;
 		width: 0.75rem;
 		height: 0.75rem;
+		margin: 0.15rem;
 		border-radius: 50%;
 		background-color: var(--secondary);
 		transition: 0.5s ease;
+	}
+
+	li:nth-last-child(2) {
+		order: initial;
+	}
+
+	.socials {
+		display: flex;
+		flex-direction: row;
+
+		a {
+			flex: 1;
+			padding: 0;
+			padding: 0.25rem;
+		}
+
+		svg {
+			width: 1rem;
+			height: 1rem;
+			margin: auto;
+		}
+
+		.email {
+			color: variables.$black;
+			border-bottom-left-radius: 0.25rem;
+		}
+
+		.github {
+			path:last-child {
+				transition: 0.25s ease;
+				fill: variables.$black;
+			}
+		}
+
+		.linkedin {
+			path {
+				fill: variables.$black;
+			}
+
+			path:last-child {
+				fill: var(--gold);
+			}
+		}
 	}
 
 	.ham_menu {
@@ -174,16 +208,16 @@
 	&.open_menu {
 		li:not(:last-child) {
 			transform-origin: right;
-			animation: rotateIn 0.5s ease forwards;
+			animation: slideIn 0.5s ease forwards;
 		}
 
-		@keyframes rotateIn {
+		@keyframes slideIn {
 			0% {
-				transform: rotateY(90deg);
+				transform: translateX(100%);
 			}
 
 			100% {
-				transform: rotateY(0);
+				transform: translateX(0);
 			}
 		}
 
@@ -207,7 +241,7 @@
 		}
 	}
 
-	@media only screen and (min-width: 640px) {
+	@media only screen and (min-width: 800px) {
 		transition: 0.5s ease;
 		width: 100%;
 
@@ -243,6 +277,77 @@
 			border-radius: 0.25rem;
 		}
 
+		.mode {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			border-bottom-left-radius: 0.25rem;
+
+			&.dark {
+				.moon {
+					opacity: 1;
+					transform: rotate(0);
+				}
+
+				.mode_slider_circle {
+					transform: translateX(0);
+				}
+			}
+
+			&.light {
+				.sun {
+					opacity: 1;
+					transform: rotate(0);
+				}
+
+				.mode_slider_circle {
+					transform: translateX(1rem);
+				}
+			}
+		}
+
+		.mode_slider {
+			width: 2.1rem;
+		}
+
+		li:nth-last-child(2) {
+			order: 0;
+			margin-right: auto;
+		}
+
+		.socials {
+			display: flex;
+			flex-direction: row;
+
+			svg {
+				width: 1.5rem;
+				height: 1.5rem;
+				margin: auto;
+			}
+
+			.email {
+				color: variables.$black;
+				border-bottom-left-radius: 0.25rem;
+			}
+
+			.github {
+				path:last-child {
+					transition: 0.25s ease;
+					fill: variables.$black;
+				}
+			}
+
+			.linkedin {
+				path {
+					fill: variables.$black;
+				}
+
+				path:last-child {
+					fill: var(--gold);
+				}
+			}
+		}
+
 		&.open_menu {
 			width: 100%;
 			background-color: variables.$blue;
@@ -268,7 +373,7 @@
 		}
 	}
 
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: 1000px) {
 		width: 100%;
 		background-color: variables.$blue;
 
@@ -288,6 +393,10 @@
 
 		li:last-child {
 			display: none;
+		}
+
+		.mode_slider_circle {
+			margin: 0.2rem 0.15rem;
 		}
 	}
 }
