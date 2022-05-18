@@ -137,7 +137,7 @@ const Projects = () => {
 							target='_blank'
 							rel='noreferrer'
 						>
-							Project Github
+							Project GitHub
 						</a>
 						<a
 							className={styles.button}
