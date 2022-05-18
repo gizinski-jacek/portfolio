@@ -10,6 +10,7 @@
 
 		> h3 {
 			min-width: 100px;
+			user-select: none;
 		}
 	}
 
@@ -41,16 +42,19 @@
 	}
 
 	svg {
+		display: block;
+		margin: auto;
+		margin-bottom: 0.5rem;
 		width: 3rem;
 		height: 3rem;
+
+		* {
+			transition: 0.25s ease;
+		}
 	}
 
 	.email {
 		color: var(--secondary);
-
-		path {
-			transition: 0.25s ease;
-		}
 
 		&:hover path {
 			fill: var(--gold);
@@ -59,7 +63,6 @@
 
 	.github {
 		path:last-child {
-			transition: 0.25s ease;
 			fill: var(--secondary);
 		}
 
