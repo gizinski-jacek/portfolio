@@ -1,4 +1,3 @@
-import './App.scss';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
@@ -6,6 +5,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import useLocalStorage from 'use-local-storage';
+import styles from './App.module.scss';
 
 const App = () => {
 	const defaultLight = window.matchMedia(
@@ -22,7 +22,7 @@ const App = () => {
 	};
 
 	return (
-		<div id='app' className='app' data-theme-mode={theme}>
+		<div id='app' className={styles.app} data-theme-mode={theme}>
 			<Nav theme={theme} toggleTheme={toggleTheme} />
 			<Home />
 			<About />
