@@ -33,6 +33,13 @@ const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
 		>
 			<ul>
 				<li>
+					<div className={styles.ham_menu} onClick={() => toggleMenu()}>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</li>
+				<li>
 					<a href='#home'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'>
 							<path d='M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z'></path>
@@ -131,23 +138,6 @@ const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
 				<li>
 					<div className={styles.socials}>
 						<a
-							href='mailto:jacektrg@gmail.com'
-							rel='noreferrer'
-							className={styles.email}
-						>
-							<svg
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 1000 1000'
-								width='1000mm'
-								height='1000mm'
-							>
-								<path
-									fill='currentColor'
-									d='M 900 163C 934 163 962 191 962 225C 962 225 962 305 962 305C 962 305 579 569 579 569C 545 592 521 600 500 600C 479 600 455 592 421 569C 421 569 38 305 38 305C 38 305 38 225 38 225C 38 191 66 163 100 163C 100 163 900 163 900 163M 379 631C 379 631 379 631 379 631C 420 658 459 675 500 675C 541 675 580 658 621 631C 621 631 621 631 621 631C 621 631 962 396 962 396C 962 396 962 800 962 800C 962 834 934 862 900 862C 900 862 100 862 100 862C 66 862 38 834 38 800C 38 800 38 396 38 396C 38 396 379 631 379 631'
-								></path>
-							</svg>
-						</a>
-						<a
 							href='https://github.com/gizinski-jacek'
 							rel='noreferrer'
 							className={styles.github}
@@ -185,13 +175,23 @@ const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
 								/>
 							</svg>
 						</a>
-					</div>
-				</li>
-				<li>
-					<div className={styles.ham_menu} onClick={() => toggleMenu()}>
-						<span></span>
-						<span></span>
-						<span></span>
+						<a
+							href='mailto:jacektrg@gmail.com'
+							rel='noreferrer'
+							className={styles.email}
+						>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								viewBox='0 0 1000 1000'
+								width='1000mm'
+								height='1000mm'
+							>
+								<path
+									fill='currentColor'
+									d='M 900 163C 934 163 962 191 962 225C 962 225 962 305 962 305C 962 305 579 569 579 569C 545 592 521 600 500 600C 479 600 455 592 421 569C 421 569 38 305 38 305C 38 305 38 225 38 225C 38 191 66 163 100 163C 100 163 900 163 900 163M 379 631C 379 631 379 631 379 631C 420 658 459 675 500 675C 541 675 580 658 621 631C 621 631 621 631 621 631C 621 631 962 396 962 396C 962 396 962 800 962 800C 962 834 934 862 900 862C 900 862 100 862 100 862C 66 862 38 834 38 800C 38 800 38 396 38 396C 38 396 379 631 379 631'
+								></path>
+							</svg>
+						</a>
 					</div>
 				</li>
 			</ul>
