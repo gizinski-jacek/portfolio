@@ -59,17 +59,15 @@
 		border: 2px solid transparent;
 		transition: 0.25s ease;
 		cursor: pointer;
-	}
 
-	a:hover,
-	.mode:hover {
-		filter: brightness(110%);
-		border-color: var(--secondary);
-	}
+		&:hover {
+			filter: brightness(110%);
+			border-color: var(--secondary);
+		}
 
-	a:active,
-	.mode:active {
-		filter: brightness(120%);
+		&:active {
+			filter: brightness(120%);
+		}
 	}
 
 	.mode {
@@ -148,7 +146,6 @@
 
 		.github {
 			path:last-child {
-				transition: 0.25s ease;
 				fill: variables.$black;
 			}
 		}
