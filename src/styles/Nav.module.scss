@@ -3,7 +3,7 @@
 .nav {
 	position: fixed;
 	top: 0;
-	right: 0;
+	left: 0;
 	z-index: 10;
 	user-select: none;
 
@@ -23,16 +23,15 @@
 		flex-direction: row;
 	}
 
-	li:first-child {
+	li:nth-child(2) {
 		a {
-			border-top-left-radius: 0.25rem;
+			border-top-right-radius: 0.25rem;
 		}
 	}
 
-	li:not(:last-child) {
+	li:not(:first-child) {
 		transition: 0.5s ease;
-		transform-origin: right;
-		transform: translateX(100%);
+		transform-origin: left;
 		animation: slideOut 0.5s ease forwards;
 	}
 
@@ -42,13 +41,12 @@
 		}
 
 		100% {
-			transform: translateX(100%);
+			transform: translateX(-100%);
 		}
 	}
 
-	li:last-child {
+	li:first-child {
 		width: fit-content;
-		align-self: flex-end;
 		margin: 0.5rem 0.75rem;
 		order: -1;
 	}
@@ -77,8 +75,6 @@
 
 	.mode {
 		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
 
 		&.dark {
 			.moon {
@@ -131,10 +127,6 @@
 		transition: 0.5s ease;
 	}
 
-	li:nth-last-child(2) {
-		order: initial;
-	}
-
 	.socials {
 		display: flex;
 		flex-direction: row;
@@ -153,7 +145,7 @@
 
 		.email {
 			color: variables.$black;
-			border-bottom-left-radius: 0.25rem;
+			border-bottom-right-radius: 0.25rem;
 		}
 
 		.github {
@@ -191,29 +183,23 @@
 			background: var(--secondary);
 			border-radius: 200px;
 			z-index: 1;
-			transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-				background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.5s ease;
+			transition: 0.5s ease;
 		}
 
-		span:nth-last-child(3) {
+		span:first-child {
 			margin-top: 4px;
-			transform-origin: 100% 0%;
-		}
-
-		span:last-child {
-			transform-origin: 100% 0%;
 		}
 	}
 
 	&.open_menu {
-		li:not(:last-child) {
-			transform-origin: right;
+		li:not(:first-child) {
+			transform-origin: left;
 			animation: slideIn 0.5s ease forwards;
 		}
 
 		@keyframes slideIn {
 			0% {
-				transform: translateX(100%);
+				transform: translateX(-100%);
 			}
 
 			100% {
@@ -221,13 +207,13 @@
 			}
 		}
 
-		li:last-child {
+		li:first-child {
 			order: -1;
 		}
 
 		.ham_menu {
 			span:first-child {
-				transform: rotate(-45deg) translate(-2px, -3px);
+				transform: translate(0px, 8px) rotate(45deg);
 			}
 
 			span:nth-last-child(2) {
@@ -236,8 +222,22 @@
 			}
 
 			span:last-child {
-				transform: rotate(45deg) translate(1px, 2px);
+				transform: translate(0px, -8px) rotate(-45deg);
 			}
+		}
+	}
+
+	@media only screen and (min-width: 600px) {
+		.mode {
+			&.light {
+				.mode_slider_circle {
+					transform: translateX(1rem);
+				}
+			}
+		}
+
+		.mode_slider {
+			width: 2.1rem;
 		}
 	}
 
@@ -247,11 +247,11 @@
 
 		ul {
 			flex-direction: row;
-			justify-content: flex-end;
+			justify-content: space-between !important;
 			align-items: center;
 		}
 
-		li:not(:last-child) {
+		li:not(:first-child) {
 			transform-origin: top;
 			animation: rotateOut 0.5s ease forwards;
 		}
@@ -266,10 +266,6 @@
 			}
 		}
 
-		li:last-child {
-			order: 0;
-		}
-
 		a,
 		.mode {
 			padding: 0.5rem;
@@ -278,28 +274,7 @@
 		}
 
 		.mode {
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-end;
-			border-bottom-left-radius: 0.25rem;
-
-			&.dark {
-				.moon {
-					opacity: 1;
-					transform: rotate(0);
-				}
-
-				.mode_slider_circle {
-					transform: translateX(0);
-				}
-			}
-
 			&.light {
-				.sun {
-					opacity: 1;
-					transform: rotate(0);
-				}
-
 				.mode_slider_circle {
 					transform: translateX(1rem);
 				}
@@ -310,41 +285,14 @@
 			width: 2.1rem;
 		}
 
-		li:nth-last-child(2) {
-			order: 0;
-			margin-right: auto;
+		li:last-child {
+			margin-left: auto;
 		}
 
 		.socials {
-			display: flex;
-			flex-direction: row;
-
 			svg {
 				width: 1.5rem;
 				height: 1.5rem;
-				margin: auto;
-			}
-
-			.email {
-				color: variables.$black;
-				border-bottom-left-radius: 0.25rem;
-			}
-
-			.github {
-				path:last-child {
-					transition: 0.25s ease;
-					fill: variables.$black;
-				}
-			}
-
-			.linkedin {
-				path {
-					fill: variables.$black;
-				}
-
-				path:last-child {
-					fill: var(--gold);
-				}
 			}
 		}
 
@@ -352,7 +300,7 @@
 			width: 100%;
 			background-color: variables.$blue;
 
-			li:not(:last-child) {
+			li:not(:first-child) {
 				transform-origin: top;
 				animation: rotateIn 0.5s ease forwards;
 			}
@@ -365,10 +313,6 @@
 				100% {
 					transform: rotateX(0);
 				}
-			}
-
-			li:last-child {
-				order: 0;
 			}
 		}
 	}
@@ -386,12 +330,12 @@
 			text-align: center;
 		}
 
-		li:not(:last-child) {
+		li:not(:first-child) {
 			animation: none;
 			transform: none;
 		}
 
-		li:last-child {
+		li:first-child {
 			display: none;
 		}
 
