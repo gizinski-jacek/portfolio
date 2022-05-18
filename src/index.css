@@ -1,0 +1,47 @@
+:root {
+	font-family: 'Rubik', sans-serif;
+	font-size: 12px;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 5.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+p {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+	:root {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	:root {
+		font-size: 16px;
+	}
+}
