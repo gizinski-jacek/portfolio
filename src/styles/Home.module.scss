@@ -86,27 +86,10 @@
 		width: 2.5rem;
 		height: 2.5rem;
 		margin: 0.5rem;
-
-		* {
-			transition: 0.25s ease;
-		}
-	}
-
-	.email {
 		color: variables.$black;
 	}
 
-	.github {
-		path:last-child {
-			fill: variables.$black;
-		}
-	}
-
 	.linkedin {
-		path {
-			fill: variables.$black;
-		}
-
 		path:last-child {
 			fill: var(--gold);
 		}
