@@ -1,7 +1,7 @@
 :root {
 	font-family: 'Rubik', sans-serif;
 	font-size: 12px;
-	overflow-y: auto;
+	overflow: hidden auto;
 	scroll-behavior: smooth;
 }
 
