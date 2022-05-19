@@ -108,6 +108,7 @@
 	}
 
 	.mode_slider {
+		height: fit-content;
 		margin-left: 0.5rem;
 		border-radius: 1rem;
 		background-color: var(--primary);
@@ -115,9 +116,9 @@
 	}
 
 	.mode_slider_circle {
-		width: 0.75rem;
-		height: 0.75rem;
-		margin: 0.15rem;
+		width: 8px;
+		height: 8px;
+		margin: 2px;
 		border-radius: 50%;
 		background-color: var(--secondary);
 		transition: 0.5s ease;
@@ -165,6 +166,7 @@
 		display: block;
 		position: relative;
 		padding: 0.5rem 0.75rem;
+		margin-right: 0.5rem;
 		background-color: variables.$blue;
 		user-select: none;
 		z-index: 1;
@@ -229,7 +231,13 @@
 		}
 
 		.mode_slider {
-			width: 2.1rem;
+			width: 2rem;
+		}
+
+		.mode_slider_circle {
+			width: 10px;
+			height: 10px;
+			margin: 2px;
 		}
 	}
 
@@ -317,12 +325,9 @@
 			display: none;
 		}
 
-		.mode_slider {
-			width: 2rem;
-		}
-
 		.mode_slider_circle {
-			margin: 0.2rem 0.15rem;
+			width: 12px;
+			height: 12px;
 		}
 	}
 }
