@@ -61,6 +61,7 @@
 		&.previousProject {
 			transform: translateX(-2rem);
 			opacity: 0.5;
+			cursor: pointer;
 
 			&[data-slidebackward='1'] {
 				animation: previousToEarlier 0.75s;
@@ -130,6 +131,7 @@
 		&.nextProject {
 			transform: translateX(2rem);
 			opacity: 0.5;
+			cursor: pointer;
 
 			&[data-slidebackward='1'] {
 				animation: nextToCurrent 0.75s;
