@@ -5,26 +5,36 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 75vh;
+	height: 100vh;
 	margin-bottom: 2rem;
+	background-image: url('./home_background.jpg');
+	background-size: auto;
+	background-size: cover;
+	transition: inherit;
 
 	h1 {
 		margin: 1rem;
 		font-weight: 600;
 		text-align: center;
 		text-transform: uppercase;
-		font-style: italic;
+		color: variables.$black;
+		transition: inherit;
+		background-color: var(--gold);
+		opacity: 0.85;
+		padding: 1rem;
+		border-radius: 0.25rem;
 	}
 
 	h2 {
 		margin: 1rem;
+		opacity: 0.85;
 		padding: 0.5rem 1rem;
 		color: variables.$black;
 		background-color: var(--gold);
 		font-weight: 600;
 		text-align: center;
 		text-transform: uppercase;
-		font-style: italic;
+		transition: inherit;
 		clip-path: polygon(
 			12px 0%,
 			100% 0px,
@@ -49,6 +59,7 @@
 	top: 500px;
 	display: flex;
 	flex-direction: column;
+	transition: inherit;
 
 	a {
 		display: flex;
@@ -57,7 +68,7 @@
 		color: variables.$black;
 		background-color: var(--gold);
 		transform: translateX(calc(100% - 3.5rem));
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 
 		&:first-child {
 			border-top-left-radius: 0.25rem;
@@ -88,6 +99,11 @@
 		height: 2.5rem;
 		margin: 0.5rem;
 		color: variables.$black;
+		transition: inherit;
+	}
+
+	path {
+		transition: inherit;
 	}
 
 	.linkedin {
