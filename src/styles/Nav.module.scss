@@ -142,6 +142,11 @@
 			height: 1rem;
 			margin: auto;
 			color: variables.$black;
+			transition: inherit;
+		}
+
+		path {
+			transition: inherit;
 		}
 
 		.email {
