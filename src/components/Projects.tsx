@@ -69,6 +69,7 @@ const Projects = () => {
 					</div>
 					<div
 						className={`${styles.project_item} ${styles.previousProject}`}
+						onClick={() => previousSlide()}
 						data-slidebackward={slideBackward}
 						data-slideforward={slideForward}
 						onAnimationEnd={() => {
@@ -99,6 +100,7 @@ const Projects = () => {
 					</div>
 					<div
 						className={`${styles.project_item} ${styles.nextProject}`}
+						onClick={() => nextSlide()}
 						data-slidebackward={slideBackward}
 						data-slideforward={slideForward}
 						onAnimationEnd={() => {
