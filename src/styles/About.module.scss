@@ -7,13 +7,13 @@
 		margin: 3rem;
 		text-align: justify;
 
-		img {
+		svg {
 			width: 3rem;
 			height: 3rem;
 		}
 
 		&:nth-of-type(1) {
-			img {
+			svg {
 				margin: 0.5rem;
 				margin-right: 0;
 				float: right;
@@ -21,13 +21,13 @@
 		}
 
 		&:nth-of-type(2) {
-			img:first-child {
+			svg:first-child {
 				margin: 0.5rem;
 				margin-left: 0;
 				float: left;
 			}
 
-			img:last-child {
+			svg:last-child {
 				margin: 0.5rem;
 				margin-right: 0;
 				float: right;
