@@ -9,7 +9,7 @@ const Contact = () => {
 				<h3>Write me an email</h3>
 				<div className={styles.container}>
 					<div className={`${styles.email} ${styles.contact_method}`}>
-						<a href='mailto:jacektrg@gmail.com' rel='noreferrer'>
+						<a href='mailto:gizinski.jacek.tr@gmail.com' rel='noreferrer'>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 1000 1000'
@@ -22,7 +22,7 @@ const Contact = () => {
 								></path>
 							</svg>
 						</a>
-						<h3>jacektrg@gmail.com</h3>
+						<h3>gizinski.jacek.tr@gmail.com</h3>
 					</div>
 				</div>
 				<h3>or reach me through</h3>

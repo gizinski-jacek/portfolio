@@ -183,7 +183,7 @@ const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
 							</svg>
 						</a>
 						<a
-							href='mailto:jacektrg@gmail.com'
+							href='mailto:gizinski.jacek.tr@gmail.com'
 							rel='noreferrer'
 							className={styles.email}
 						>

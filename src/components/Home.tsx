@@ -80,7 +80,7 @@ const Home = () => {
 					<h4>LinkedIn</h4>
 				</a>
 				<a
-					href='mailto:jacektrg@gmail.com'
+					href='mailto:gizinski.jacek.tr@gmail.com'
 					rel='noreferrer'
 					className={styles.email}
 				>

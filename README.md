@@ -71,20 +71,14 @@ git push heroku main
 heroku open
 ```
 
-## Features
-
-<!-- - Responsive UI
-- Logging in with Facebook account
-- Adding posts and comments -->
-
 ## Status
 
-Project status: **_BEING WORKED ON_**
+Project status: **_FINISHED_**
 
 ## Contact
 
 Feel free to contact me at:
 
 ```
-jacektrg@gmail.com
+gizinski.jacek.tr@gmail.com
 ```
