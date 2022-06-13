@@ -7,10 +7,10 @@
 	align-items: center;
 	height: 100vh;
 	margin-bottom: 2rem;
+	transition: inherit;
 	background-image: url('./home_background.jpg');
 	background-size: auto;
 	background-size: cover;
-	transition: inherit;
 
 	h1 {
 		margin: 1rem;
