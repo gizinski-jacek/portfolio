@@ -22,13 +22,14 @@
 	.project_item {
 		display: flex;
 		flex-direction: column;
-		min-width: 160px;
+		min-width: 240px;
 		padding: 1rem;
 		background-color: variables.$blue;
 		border-radius: 0.5rem;
 		text-align: center;
 
 		h3 {
+			font-weight: 600;
 			margin-top: 1rem;
 			white-space: nowrap;
 		}
@@ -160,6 +161,7 @@
 
 			100% {
 				transform: translateX(calc(100% + 4rem));
+				opacity: 0;
 			}
 		}
 
@@ -184,11 +186,11 @@
 		}
 
 		@media only screen and (min-width: 600px) {
-			min-width: 30%;
+			min-width: 44%;
 		}
 
 		@media only screen and (min-width: 1200px) {
-			min-width: 400px;
+			min-width: 500px;
 		}
 	}
 
