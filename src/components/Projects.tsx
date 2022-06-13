@@ -92,10 +92,12 @@ const Projects = () => {
 							setSlideForward(0);
 						}}
 					>
-						<img
-							src={projectList[currentProject].preview}
-							alt={projectList[currentProject].name}
-						/>
+						<a href={projectList[currentProject].preview}>
+							<img
+								src={projectList[currentProject].preview}
+								alt={projectList[currentProject].name}
+							/>
+						</a>
 						<h3>{projectList[currentProject].name}</h3>
 					</div>
 					<div
