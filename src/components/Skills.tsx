@@ -495,8 +495,8 @@ const Skills = () => {
 										y2='41.3637237%'
 										id='linearGradient-2'
 									>
-										<stop stop-color='#FFEED7' offset='0%' />
-										<stop stop-color='#BDBFC2' offset='100%' />
+										<stop stopColor='#FFEED7' offset='0%' />
+										<stop stopColor='#BDBFC2' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='54.4065463%'
@@ -505,8 +505,8 @@ const Skills = () => {
 										y2='90.5422349%'
 										id='linearGradient-3'
 									>
-										<stop stop-color='#FFFFFF' stop-opacity='0.8' offset='0%' />
-										<stop stop-color='#FFFFFF' stop-opacity='0' offset='100%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0.8' offset='0%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='51.859653%'
@@ -515,8 +515,8 @@ const Skills = () => {
 										y2='9.74782136%'
 										id='linearGradient-4'
 									>
-										<stop stop-color='#FFEED7' offset='0%' />
-										<stop stop-color='#BDBFC2' offset='100%' />
+										<stop stopColor='#FFEED7' offset='0%' />
+										<stop stopColor='#BDBFC2' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='49.9251097%'
@@ -525,8 +525,8 @@ const Skills = () => {
 										y2='13.8109272%'
 										id='linearGradient-5'
 									>
-										<stop stop-color='#FFEED7' offset='0%' />
-										<stop stop-color='#BDBFC2' offset='100%' />
+										<stop stopColor='#FFEED7' offset='0%' />
+										<stop stopColor='#BDBFC2' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='53.9014071%'
@@ -535,12 +535,8 @@ const Skills = () => {
 										y2='93.8949571%'
 										id='linearGradient-6'
 									>
-										<stop
-											stop-color='#FFFFFF'
-											stop-opacity='0.65'
-											offset='0%'
-										/>
-										<stop stop-color='#FFFFFF' stop-opacity='0' offset='100%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0.65' offset='0%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='45.5928761%'
@@ -549,12 +545,8 @@ const Skills = () => {
 										y2='93.5235162%'
 										id='linearGradient-7'
 									>
-										<stop
-											stop-color='#FFFFFF'
-											stop-opacity='0.65'
-											offset='0%'
-										/>
-										<stop stop-color='#FFFFFF' stop-opacity='0' offset='100%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0.65' offset='0%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='49.9844987%'
@@ -563,8 +555,8 @@ const Skills = () => {
 										y2='40.6316864%'
 										id='linearGradient-8'
 									>
-										<stop stop-color='#FFEED7' offset='0%' />
-										<stop stop-color='#BDBFC2' offset='100%' />
+										<stop stopColor='#FFEED7' offset='0%' />
+										<stop stopColor='#BDBFC2' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='53.5047131%'
@@ -573,8 +565,8 @@ const Skills = () => {
 										y2='23.5451715%'
 										id='linearGradient-9'
 									>
-										<stop stop-color='#FFEED7' offset='0%' />
-										<stop stop-color='#BDBFC2' offset='100%' />
+										<stop stopColor='#FFEED7' offset='0%' />
+										<stop stopColor='#BDBFC2' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='49.8413363%'
@@ -583,8 +575,8 @@ const Skills = () => {
 										y2='94.6729694%'
 										id='linearGradient-10'
 									>
-										<stop stop-color='#FFFFFF' stop-opacity='0.8' offset='0%' />
-										<stop stop-color='#FFFFFF' stop-opacity='0' offset='100%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0.8' offset='0%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='49.9272298%'
@@ -593,12 +585,8 @@ const Skills = () => {
 										y2='92.7824735%'
 										id='linearGradient-11'
 									>
-										<stop
-											stop-color='#FFFFFF'
-											stop-opacity='0.65'
-											offset='0%'
-										/>
-										<stop stop-color='#FFFFFF' stop-opacity='0' offset='100%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0.65' offset='0%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='49.8755597%'
@@ -607,12 +595,8 @@ const Skills = () => {
 										y2='81.203617%'
 										id='linearGradient-12'
 									>
-										<stop
-											stop-color='#FFFFFF'
-											stop-opacity='0.65'
-											offset='0%'
-										/>
-										<stop stop-color='#FFFFFF' stop-opacity='0' offset='100%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0.65' offset='0%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='49.8334391%'
@@ -621,12 +605,8 @@ const Skills = () => {
 										y2='71.7989617%'
 										id='linearGradient-13'
 									>
-										<stop
-											stop-color='#FFFFFF'
-											stop-opacity='0.65'
-											offset='0%'
-										/>
-										<stop stop-color='#FFFFFF' stop-opacity='0' offset='100%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0.65' offset='0%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='53.4670683%'
@@ -635,8 +615,8 @@ const Skills = () => {
 										y2='98.0999776%'
 										id='linearGradient-14'
 									>
-										<stop stop-color='#FFA63F' offset='0%' />
-										<stop stop-color='#FFFF00' offset='100%' />
+										<stop stopColor='#FFA63F' offset='0%' />
+										<stop stopColor='#FFFF00' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='52.3731508%'
@@ -645,8 +625,8 @@ const Skills = () => {
 										y2='-64.6215389%'
 										id='linearGradient-15'
 									>
-										<stop stop-color='#FFEED7' offset='0%' />
-										<stop stop-color='#BDBFC2' offset='100%' />
+										<stop stopColor='#FFEED7' offset='0%' />
+										<stop stopColor='#BDBFC2' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='30.580815%'
@@ -655,8 +635,8 @@ const Skills = () => {
 										y2='89.175349%'
 										id='linearGradient-16'
 									>
-										<stop stop-color='#FFA63F' offset='0%' />
-										<stop stop-color='#FFFF00' offset='100%' />
+										<stop stopColor='#FFA63F' offset='0%' />
+										<stop stopColor='#FFFF00' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='59.5715091%'
@@ -665,12 +645,8 @@ const Skills = () => {
 										y2='66.1184465%'
 										id='linearGradient-17'
 									>
-										<stop
-											stop-color='#FFFFFF'
-											stop-opacity='0.65'
-											offset='0%'
-										/>
-										<stop stop-color='#FFFFFF' stop-opacity='0' offset='100%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0.65' offset='0%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='47.7689553%'
@@ -679,12 +655,8 @@ const Skills = () => {
 										y2='104.312856%'
 										id='linearGradient-18'
 									>
-										<stop
-											stop-color='#FFFFFF'
-											stop-opacity='0.65'
-											offset='0%'
-										/>
-										<stop stop-color='#FFFFFF' stop-opacity='0' offset='100%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0.65' offset='0%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='43.5495626%'
@@ -693,12 +665,8 @@ const Skills = () => {
 										y2='92.8267174%'
 										id='linearGradient-19'
 									>
-										<stop
-											stop-color='#FFFFFF'
-											stop-opacity='0.65'
-											offset='0%'
-										/>
-										<stop stop-color='#FFFFFF' stop-opacity='0' offset='100%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0.65' offset='0%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='49.7328042%'
@@ -707,8 +675,8 @@ const Skills = () => {
 										y2='99.3854667%'
 										id='linearGradient-20'
 									>
-										<stop stop-color='#FFA63F' offset='0%' />
-										<stop stop-color='#FFFF00' offset='100%' />
+										<stop stopColor='#FFA63F' offset='0%' />
+										<stop stopColor='#FFFF00' offset='100%' />
 									</linearGradient>
 									<linearGradient
 										x1='50.1697217%'
@@ -717,12 +685,8 @@ const Skills = () => {
 										y2='94.1704279%'
 										id='linearGradient-21'
 									>
-										<stop
-											stop-color='#FFFFFF'
-											stop-opacity='0.65'
-											offset='0%'
-										/>
-										<stop stop-color='#FFFFFF' stop-opacity='0' offset='100%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0.65' offset='0%' />
+										<stop stopColor='#FFFFFF' stopOpacity='0' offset='100%' />
 									</linearGradient>
 								</defs>
 								<g fill='none'>
@@ -730,7 +694,7 @@ const Skills = () => {
 										<path
 											d='M235.125423,249.358628 C235.125423,266.714271 182.507524,280.855905 117.584567,280.855905 C52.6616093,280.855905 0.0437105058,266.806099 0.0437105058,249.358628 L0.0437105058,249.358628 C0.0437105058,232.002986 52.6616093,217.861352 117.584567,217.861352 C182.507524,217.861352 235.033594,232.002986 235.125423,249.358628 L235.125423,249.358628 L235.125423,249.358628 Z'
 											fill='#000'
-											fill-opacity='0.2'
+											fillOpacity='0.2'
 											filter='url(#filter-1)'
 										/>
 										<path
@@ -744,7 +708,7 @@ const Skills = () => {
 										<path
 											d='M166.8048,117.859796 C180.395461,128.879251 205.097407,167.447344 169.008691,192.608434 C157.162777,200.413881 179.477174,225.115827 192.057718,212.535282 C235.676395,168.641119 190.955773,118.227111 175.528535,100.871469 C161.754216,85.719718 149.540987,104.360963 166.8048,117.859796 L166.8048,117.859796 Z'
 											stroke='#000000'
-											stroke-width='0.9773'
+											strokeWidth='0.9773'
 											fill='#000000'
 										/>
 										<path
@@ -786,7 +750,7 @@ const Skills = () => {
 										<path
 											d='M69.9254226,122.726722 C61.0180296,137.235671 39.7137494,171.395983 68.2725043,189.210769 C106.65694,212.810769 95.8211424,236.31894 60.7425432,215.106488 C11.3386521,185.537617 54.7736716,125.848901 74.5168623,103.07536 C97.1067455,77.5469553 78.8328156,107.758628 69.9254226,122.726722 L69.9254226,122.726722 Z'
 											stroke='#000000'
-											stroke-width='1.25'
+											strokeWidth='1.25'
 											fill='#000000'
 										/>
 										<path
@@ -808,7 +772,7 @@ const Skills = () => {
 										<path
 											d='M51.8351502,258.541508 C31.2655004,247.613881 1.42114241,260.65357 12.2569401,231.084699 C14.4608311,224.381197 9.0429323,214.280029 12.5324265,207.760185 C16.6647222,199.77108 25.5721152,201.515827 30.8981852,196.189757 C36.1324265,190.680029 39.438263,181.129835 49.263944,182.599095 C58.9977961,184.068356 65.5176405,196.006099 72.3129712,210.698706 C77.3635549,221.167189 95.1783409,235.951625 93.9845665,247.70571 C92.5153058,265.704154 72.0374848,269.101819 51.8351502,258.541508 L51.8351502,258.541508 Z'
 											stroke='#E68C3F'
-											stroke-width='6.25'
+											strokeWidth='6.25'
 											fill='url(#linearGradient-14)'
 										/>
 										<path
@@ -818,7 +782,7 @@ const Skills = () => {
 										<path
 											d='M194.445267,253.490924 C209.505189,235.216994 243.022699,238.981975 220.432816,213.912714 C215.657718,208.494815 217.126979,196.924387 211.249936,191.965632 C204.362777,185.904932 196.740987,190.863687 189.761998,187.741508 C182.78301,184.343842 175.436707,177.823998 166.896629,182.415438 C158.356551,187.098706 157.438263,199.220107 156.611804,215.198317 C155.877174,226.676916 145.408691,245.869134 151.010247,256.429446 C159.091181,272.774971 180.119975,270.57108 194.445267,253.490924 L194.445267,253.490924 Z'
 											stroke='#E68C3F'
-											stroke-width='6.2507'
+											strokeWidth='6.2507'
 											fill='url(#linearGradient-16)'
 										/>
 										<path
@@ -840,13 +804,13 @@ const Skills = () => {
 										<path
 											d='M97.1067455,66.3438425 C100.779897,62.9461771 109.68729,52.5695234 126.583788,63.4053211 C129.705967,65.4255546 132.277174,65.6092121 138.246045,68.1804184 C150.275617,73.1391732 144.582232,85.0769164 131.726201,89.1173833 C126.216473,90.8621304 121.257718,97.5656324 111.340209,96.9228308 C102.800131,96.4636868 100.59624,90.8621304 95.3619984,87.8317802 C86.0872903,82.597539 84.7098584,75.5267219 89.760442,71.7617413 C94.8110257,67.9967608 96.7394304,66.6193289 97.1067455,66.3438425 L97.1067455,66.3438425 Z'
 											stroke='#E68C3F'
-											stroke-width='3.75'
+											strokeWidth='3.75'
 											fill='url(#linearGradient-20)'
 										/>
 										<path
 											d='M138.429703,75.9858658 C133.379119,76.2613522 122.451493,87.1889787 110.972893,87.1889787 C99.4942942,87.1889787 92.6071346,76.5368386 90.8623875,76.5368386'
 											stroke='#E68C3F'
-											stroke-width='2.5'
+											strokeWidth='2.5'
 										/>
 										<path
 											d='M102.800131,65.4255546 C104.636707,63.7726363 110.421921,59.2730254 118.043711,63.8644651 C119.696629,64.782753 121.349547,65.7928697 123.737096,67.1703016 C128.604022,70.0169942 126.216473,74.14929 120.33943,76.7204962 C117.676395,77.8224417 113.268613,80.2099904 109.962777,80.0263328 C106.289625,79.6590176 103.810247,77.2714689 101.422699,75.7103795 C96.9230879,72.7718581 97.1985743,70.2924806 99.3106366,68.364076 C100.871726,66.8948153 102.616473,65.5173833 102.800131,65.4255546 L102.800131,65.4255546 Z'
