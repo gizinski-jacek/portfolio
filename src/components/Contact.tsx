@@ -47,7 +47,7 @@ const Contact = () => {
 						<h3>GitHub</h3>
 					</a>
 					<a
-						href='https://www.linkedin.com/in/jacek-gizi%C5%84ski-ab684b239/'
+						href='https://www.linkedin.com/in/gizinski-jacek'
 						rel='noreferrer'
 						className={`${styles.linkedin} ${styles.contact_method}`}
 					>

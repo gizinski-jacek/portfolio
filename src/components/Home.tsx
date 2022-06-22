@@ -58,7 +58,7 @@ const Home = () => {
 					<h4>GitHub</h4>
 				</a>
 				<a
-					href='https://www.linkedin.com/in/jacek-gizi%C5%84ski-ab684b239/'
+					href='https://www.linkedin.com/in/gizinski-jacek'
 					rel='noreferrer'
 					className={styles.linkedin}
 				>
