@@ -1,7 +1,7 @@
 @use './variables';
 
 .projects {
-	margin: 2rem;
+	margin: 0 2rem;
 	transition: inherit;
 	user-select: none;
 
@@ -224,6 +224,7 @@
 			flex: initial;
 		}
 	}
+
 	.button {
 		flex: 1;
 		padding: 0.75rem 1rem;
