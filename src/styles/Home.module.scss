@@ -71,7 +71,7 @@
 		margin-right: 2px;
 		color: variables.$black;
 		background-color: var(--gold);
-		transition: 0.25s ease;
+		transition: inherit;
 
 		&:hover {
 			filter: brightness(110%);

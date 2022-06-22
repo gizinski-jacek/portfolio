@@ -1,8 +1,6 @@
 @use './variables';
 
 .contact {
-	transition: inherit;
-
 	.section_contact {
 		display: flex;
 		flex-direction: column;
@@ -25,15 +23,15 @@
 	.contact_method {
 		display: block;
 		margin: 1rem;
-		transition: 0.25s ease;
 		color: var(--secondary);
+		transition: 0.25s ease;
 
 		h3 {
 			padding: 0.5rem;
 			margin: 0 auto;
 			width: fit-content;
 			line-height: 2rem;
-			transition: inherit;
+			transition: 0.75s ease;
 		}
 
 		&:hover {
@@ -45,23 +43,25 @@
 	.email,
 	.github,
 	.linkedin {
+		a {
+			display: block;
+			width: fit-content;
+			margin: auto;
+		}
+
 		svg {
 			display: block;
 			margin: auto;
 			width: 3rem;
 			height: 3rem;
 			color: var(--secondary);
-			transition: 0.5s ease;
+			transition: 0.75s ease;
 		}
 	}
 
 	.linkedin {
-		path {
-			transition: 0.5s ease;
-		}
-
 		path:last-child {
-			transition: 0.5s ease;
+			transition: 0.75s ease;
 			fill: var(--primary);
 		}
 	}
