@@ -14,6 +14,7 @@
 
 	h1 {
 		margin: 1rem;
+		font-size: 3rem;
 		font-weight: 600;
 		text-align: center;
 		text-transform: uppercase;
@@ -56,9 +57,9 @@
 .socials {
 	position: absolute;
 	right: 0;
-	top: 500px;
+	top: 0;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	transition: inherit;
 	opacity: 0.85;
 
@@ -66,23 +67,14 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		padding: 2px;
+		margin-right: 2px;
 		color: variables.$black;
 		background-color: var(--gold);
-		transform: translateX(calc(100% - 3.5rem));
 		transition: 0.25s ease;
 
-		&:first-child {
-			border-top-left-radius: 0.25rem;
-		}
-
-		&:last-child {
-			border-bottom-left-radius: 0.25rem;
-		}
-
 		&:hover {
-			transform: translateX(0);
-			border-top-left-radius: 0.25rem;
-			border-bottom-left-radius: 0.25rem;
+			filter: brightness(110%);
 		}
 
 		&:active {
@@ -91,8 +83,7 @@
 	}
 
 	h4 {
-		margin: 0.5rem;
-		margin-right: 1rem;
+		display: none;
 	}
 
 	svg {
@@ -111,5 +102,52 @@
 		path:last-child {
 			fill: var(--gold);
 		}
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.home {
+		h1 {
+			font-size: 4rem;
+		}
+	}
+
+	.socials {
+		flex-direction: column;
+
+		a {
+			padding: 0;
+			margin: 0;
+			transform: translateX(calc(100% - 3.5rem));
+
+			&:first-child {
+				border-top-left-radius: 0.25rem;
+			}
+
+			&:last-child {
+				border-bottom-left-radius: 0.25rem;
+			}
+
+			&:hover {
+				transform: translateX(0);
+				border-top-left-radius: 0.25rem;
+				border-bottom-left-radius: 0.25rem;
+				filter: brightness(110%);
+			}
+
+			&:active {
+				filter: brightness(120%);
+			}
+		}
+
+		h4 {
+			display: block;
+		}
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.socials {
+		top: 500px;
 	}
 }
