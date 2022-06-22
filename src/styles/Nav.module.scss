@@ -49,7 +49,17 @@
 	li:first-child {
 		width: fit-content;
 		padding: 8px;
+		background-color: var(--gold);
 		transition: 0.25s ease;
+		cursor: pointer;
+	}
+
+	ul {
+		width: 51px;
+	}
+
+	li {
+		width: 90px;
 	}
 
 	a,
@@ -160,10 +170,6 @@
 		}
 	}
 
-	li:first-child {
-		background-color: var(--gold);
-	}
-
 	.ham_menu {
 		float: right;
 		display: block;
@@ -171,7 +177,6 @@
 		padding: 4px;
 		user-select: none;
 		z-index: 1;
-		cursor: pointer;
 
 		span {
 			display: block;
@@ -226,6 +231,10 @@
 	}
 
 	@media only screen and (min-width: 600px) {
+		li {
+			width: 120px;
+		}
+
 		.mode {
 			&.light {
 				.mode_slider_circle {
@@ -252,6 +261,11 @@
 		ul {
 			flex-direction: row;
 			align-items: center;
+			width: unset;
+		}
+
+		li {
+			width: unset;
 		}
 
 		li:first-child {
