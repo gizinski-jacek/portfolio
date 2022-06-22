@@ -32,8 +32,8 @@ const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
 			className={`${styles.nav} ${openMenu ? styles.open_menu : ''}`}
 		>
 			<ul>
-				<li>
-					<div className={styles.ham_menu} onClick={() => toggleMenu()}>
+				<li onClick={() => toggleMenu()}>
+					<div className={styles.ham_menu}>
 						<span></span>
 						<span></span>
 						<span></span>
@@ -162,7 +162,7 @@ const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
 							</svg>
 						</a>
 						<a
-							href='https://www.linkedin.com/in/jacek-gizi%C5%84ski-ab684b239/'
+							href='https://www.linkedin.com/in/gizinski-jacek'
 							rel='noreferrer'
 							className={styles.linkedin}
 						>
