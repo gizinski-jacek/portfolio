@@ -1,7 +1,6 @@
 @use './variables';
 
 .skills {
-	margin: 2rem;
 	transition: inherit;
 
 	.section_skills {
@@ -30,8 +29,8 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin: 1rem;
-		padding: 0.5rem;
+		margin: 1rem 0;
+		padding: 0.5rem 0;
 		max-width: 300px;
 		background-color: variables.$blue;
 		border-radius: 0.5rem;
@@ -58,6 +57,8 @@
 	}
 
 	@media only screen and (min-width: 600px) {
+		margin: 2rem;
+
 		.card {
 			max-width: 400px;
 		}
