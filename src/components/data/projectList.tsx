@@ -3,7 +3,7 @@ export const projectList = [
 		name: 'CV Creator',
 		preview: './previews/preview_cv_creator.png',
 		github: 'https://github.com/gizinski-jacek/cv-project-react',
-		demo: 'https://cv-project-react-543266.herokuapp.com',
+		demo: 'https://cv-creator-541276.herokuapp.com',
 	},
 	{
 		name: 'Weather App',
