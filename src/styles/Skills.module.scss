@@ -17,6 +17,8 @@
 
 	h3 {
 		margin: 0 auto;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
 		width: fit-content;
 		padding-bottom: 0.25rem;
 		border-bottom: 2px solid var(--gold);

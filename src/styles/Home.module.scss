@@ -36,6 +36,16 @@
 		text-align: center;
 		text-transform: uppercase;
 		transition: inherit;
+		-webkit-clip-path: polygon(
+			12px 0%,
+			100% 0px,
+			100% 12px,
+			100% calc(100% - 12px),
+			calc(100% - 12px) 100%,
+			0px 100%,
+			0% calc(100% - 12px),
+			0% 12px
+		);
 		clip-path: polygon(
 			12px 0%,
 			100% 0px,
@@ -74,10 +84,12 @@
 		transition: 0.25s ease;
 
 		&:hover {
+			-webkit-filter: brightness(110%);
 			filter: brightness(110%);
 		}
 
 		&:active {
+			-webkit-filter: brightness(120%);
 			filter: brightness(120%);
 		}
 	}
@@ -131,10 +143,12 @@
 				transform: translateX(0);
 				border-top-left-radius: 0.25rem;
 				border-bottom-left-radius: 0.25rem;
+				-webkit-filter: brightness(110%);
 				filter: brightness(110%);
 			}
 
 			&:active {
+				-webkit-filter: brightness(120%);
 				filter: brightness(120%);
 			}
 		}

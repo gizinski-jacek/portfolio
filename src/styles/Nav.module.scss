@@ -5,6 +5,9 @@
 	top: 0;
 	left: 0;
 	z-index: 10;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 	user-select: none;
 
 	ul {
@@ -33,7 +36,18 @@
 	li:not(:first-child) {
 		transition: 0.5s ease;
 		transform-origin: left;
+		-webkit-animation: slideOut 0.5s ease forwards;
 		animation: slideOut 0.5s ease forwards;
+	}
+
+	@-webkit-keyframes slideOut {
+		0% {
+			transform: translateX(0);
+		}
+
+		100% {
+			transform: translateX(-100%);
+		}
 	}
 
 	@keyframes slideOut {
@@ -47,6 +61,8 @@
 	}
 
 	li:first-child {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
 		width: fit-content;
 		padding: 8px;
 		background-color: var(--gold);
@@ -74,11 +90,13 @@
 		cursor: pointer;
 
 		&:hover {
+			-webkit-filter: brightness(110%);
 			filter: brightness(110%);
 			border-color: var(--secondary);
 		}
 
 		&:active {
+			-webkit-filter: brightness(120%);
 			filter: brightness(120%);
 		}
 	}
@@ -122,6 +140,8 @@
 	}
 
 	.mode_slider {
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
 		height: fit-content;
 		margin-left: 0.5rem;
 		border-radius: 1rem;
@@ -175,6 +195,9 @@
 		display: block;
 		position: relative;
 		padding: 4px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
 		user-select: none;
 		z-index: 1;
 
@@ -201,7 +224,18 @@
 	&.open_menu {
 		li:not(:first-child) {
 			transform-origin: left;
+			-webkit-animation: slideIn 0.5s ease forwards;
 			animation: slideIn 0.5s ease forwards;
+		}
+
+		@-webkit-keyframes slideIn {
+			0% {
+				transform: translateX(-100%);
+			}
+
+			100% {
+				transform: translateX(0);
+			}
 		}
 
 		@keyframes slideIn {
@@ -274,7 +308,18 @@
 
 		li:not(:first-child) {
 			transform-origin: top;
+			-webkit-animation: rotateOut 0.5s ease forwards;
 			animation: rotateOut 0.5s ease forwards;
+		}
+
+		@-webkit-keyframes rotateOut {
+			0% {
+				transform: rotateX(0);
+			}
+
+			100% {
+				transform: rotateX(90deg);
+			}
 		}
 
 		@keyframes rotateOut {
@@ -310,7 +355,18 @@
 
 			li:not(:first-child) {
 				transform-origin: top;
+				-webkit-animation: rotateIn 0.5s ease forwards;
 				animation: rotateIn 0.5s ease forwards;
+			}
+
+			@-webkit-keyframes rotateIn {
+				0% {
+					transform: rotateX(90deg);
+				}
+
+				100% {
+					transform: rotateX(0);
+				}
 			}
 
 			@keyframes rotateIn {
@@ -339,6 +395,7 @@
 		}
 
 		li:not(:first-child) {
+			-webkit-animation: none;
 			animation: none;
 			transform: none;
 		}
