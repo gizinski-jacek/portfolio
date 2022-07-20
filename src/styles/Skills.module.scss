@@ -1,6 +1,8 @@
 @use './variables';
 
 .skills {
+	padding: 2rem;
+
 	.section_skills {
 		display: flex;
 		flex-direction: column;
@@ -57,8 +59,6 @@
 	}
 
 	@media only screen and (min-width: 600px) {
-		margin: 2rem;
-
 		.card {
 			max-width: 400px;
 		}
