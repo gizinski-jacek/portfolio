@@ -1,6 +1,9 @@
 @use './variables';
 
 .contact {
+	padding: 2rem;
+	margin-bottom: 5rem;
+
 	.section_contact {
 		display: flex;
 		flex-direction: column;
