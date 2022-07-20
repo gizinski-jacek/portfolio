@@ -78,14 +78,15 @@
 		flex-direction: row;
 		align-items: center;
 		padding: 2px;
-		margin-right: 2px;
 		color: variables.$black;
 		background-color: var(--gold);
+		border: 2px solid transparent;
 		transition: 0.25s ease;
 
 		&:hover {
 			-webkit-filter: brightness(110%);
 			filter: brightness(110%);
+			border-color: var(--secondary);
 		}
 
 		&:active {
@@ -161,6 +162,6 @@
 
 @media only screen and (min-width: 800px) {
 	.socials {
-		top: 500px;
+		top: 70vh;
 	}
 }
