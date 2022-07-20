@@ -11,6 +11,7 @@ const App = () => {
 	const defaultLight = window.matchMedia(
 		'(prefers-color-scheme: light)'
 	).matches;
+
 	const [theme, setTheme] = useLocalStorage<'dark' | 'light'>(
 		'theme',
 		defaultLight ? 'light' : 'dark'
