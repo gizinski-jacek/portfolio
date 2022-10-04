@@ -12,10 +12,16 @@ export const projectList = [
 		demo: 'https://gizinski-jacek.github.io/Weather-App-project',
 	},
 	{
+		name: 'TrackLimits',
+		preview: './previews/preview_tracklimits.png',
+		github: 'https://github.com/gizinski-jacek/fia-decisions',
+		demo: 'https://tracklimits.cfd',
+	},
+	{
 		name: 'Odinbook',
 		preview: './previews/preview_odinbook.png',
 		github: 'https://github.com/gizinski-jacek/odinbook-client',
-		demo: 'https://odinbook-client-97346.netlify.app/',
+		demo: 'https://odinbook-client-97346.netlify.app',
 	},
 	{
 		name: 'Youtube',
@@ -48,10 +54,23 @@ export const projectList = [
 		demo: 'https://gizinski-jacek.github.io/ToDo-List-project',
 	},
 	{
+		name: 'Online Alarm Clock',
+		preview: './previews/preview_online_alarm_clock.png',
+		github: 'https://github.com/gizinski-jacek/alarm-app',
+		demo: 'https://online-alarm-clock-35d8a.netlify.app/',
+	},
+	{
 		name: 'Online Library',
 		preview: './previews/preview_online_library.png',
 		github: 'https://github.com/gizinski-jacek/Library-project',
 		demo: 'https://gizinski-jacek.github.io/Library-project',
+	},
+
+	{
+		name: 'Units Converter',
+		preview: './previews/preview_units_converter.png',
+		github: 'https://units-converter-opal.vercel.app/',
+		demo: 'https://cv-creator-541276.herokuapp.com',
 	},
 	{
 		name: 'Inventory App',
