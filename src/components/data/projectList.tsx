@@ -8,14 +8,14 @@ export const projectList = [
 	{
 		name: 'Weather App',
 		preview: './previews/preview_weather_app.png',
-		github: 'https://github.com/gizinski-jacek/Weather-App-project',
-		demo: 'https://gizinski-jacek.github.io/Weather-App-project',
+		github: 'https://github.com/gizinski-jacek/weather-app-vue',
+		demo: 'https://weather-app-vue-sandy.vercel.app/',
 	},
 	{
 		name: 'TrackLimits',
 		preview: './previews/preview_tracklimits.png',
 		github: 'https://github.com/gizinski-jacek/fia-decisions',
-		demo: 'https://tracklimits.cfd',
+		demo: 'https://fia-penalties-sandy.vercel.app',
 	},
 	{
 		name: 'Odinbook',
