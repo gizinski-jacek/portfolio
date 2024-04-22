@@ -1,4 +1,9 @@
-export const projectList = [
+export const projectList: {
+	name: string;
+	preview: string;
+	github: string;
+	demo: string;
+}[] = [
 	{
 		name: 'CV Creator',
 		preview: './previews/preview_cv_creator.png',
@@ -9,7 +14,13 @@ export const projectList = [
 		name: 'Weather App',
 		preview: './previews/preview_weather_app.png',
 		github: 'https://github.com/gizinski-jacek/weather-app-vue',
-		demo: 'https://weather-app-vue-sandy.vercel.app/',
+		demo: 'https://weather-app-vue-sandy.vercel.app',
+	},
+	{
+		name: 'QR File Share',
+		preview: './previews/preview_qr_file_share.png',
+		github: 'https://github.com/gizinski-jacek/qr-file-share',
+		demo: 'https://qr-file-share-umber.vercel.app',
 	},
 	{
 		name: 'TrackLimits',
@@ -57,7 +68,7 @@ export const projectList = [
 		name: 'Online Alarm Clock',
 		preview: './previews/preview_online_alarm_clock.png',
 		github: 'https://github.com/gizinski-jacek/alarm-app',
-		demo: 'https://online-alarm-clock-35d8a.netlify.app/',
+		demo: 'https://online-alarm-clock-35d8a.netlify.app',
 	},
 	{
 		name: 'Online Library',
@@ -69,7 +80,7 @@ export const projectList = [
 	{
 		name: 'Units Converter',
 		preview: './previews/preview_units_converter.png',
-		github: 'https://units-converter-opal.vercel.app/',
+		github: 'https://units-converter-opal.vercel.app',
 		demo: 'https://cv-creator-541276.herokuapp.com',
 	},
 	{
