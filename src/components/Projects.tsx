@@ -62,7 +62,7 @@ const Projects = () => {
 						}}
 					>
 						<img
-							src={projectList[earlierProject].preview}
+							src={projectList[earlierProject].thumbnail}
 							alt={projectList[earlierProject].name}
 						/>
 						<h3>{projectList[earlierProject].name}</h3>
@@ -78,7 +78,7 @@ const Projects = () => {
 						}}
 					>
 						<img
-							src={projectList[previousProject].preview}
+							src={projectList[previousProject].thumbnail}
 							alt={projectList[previousProject].name}
 						/>
 						<h3>{projectList[previousProject].name}</h3>
@@ -93,12 +93,12 @@ const Projects = () => {
 						}}
 					>
 						<a
-							href={projectList[currentProject].preview}
+							href={projectList[currentProject].image}
 							target='_blank'
 							rel='noreferrer'
 						>
 							<img
-								src={projectList[currentProject].preview}
+								src={projectList[currentProject].thumbnail}
 								alt={projectList[currentProject].name}
 							/>
 						</a>
@@ -115,7 +115,7 @@ const Projects = () => {
 						}}
 					>
 						<img
-							src={projectList[nextProject].preview}
+							src={projectList[nextProject].thumbnail}
 							alt={projectList[nextProject].name}
 						/>
 						<h3>{projectList[nextProject].name}</h3>
@@ -128,7 +128,7 @@ const Projects = () => {
 						}}
 					>
 						<img
-							src={projectList[laterProject].preview}
+							src={projectList[laterProject].thumbnail}
 							alt={projectList[laterProject].name}
 						/>
 						<h3>{projectList[laterProject].name}</h3>
