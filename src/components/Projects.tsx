@@ -92,7 +92,11 @@ const Projects = () => {
 							setSlideForward(0);
 						}}
 					>
-						<a href={projectList[currentProject].preview}>
+						<a
+							href={projectList[currentProject].preview}
+							target='_blank'
+							rel='noreferrer'
+						>
 							<img
 								src={projectList[currentProject].preview}
 								alt={projectList[currentProject].name}

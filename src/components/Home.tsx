@@ -40,6 +40,7 @@ const Home = () => {
 			<div className={styles.socials}>
 				<a
 					href='https://github.com/gizinski-jacek'
+					target='_blank'
 					rel='noreferrer'
 					className={styles.github}
 				>
@@ -59,6 +60,7 @@ const Home = () => {
 				</a>
 				<a
 					href='https://www.linkedin.com/in/gizinski-jacek'
+					target='_blank'
 					rel='noreferrer'
 					className={styles.linkedin}
 				>

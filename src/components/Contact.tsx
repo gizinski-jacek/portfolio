@@ -29,6 +29,7 @@ const Contact = () => {
 				<div className={styles.container}>
 					<a
 						href='https://github.com/gizinski-jacek'
+						target='_blank'
 						rel='noreferrer'
 						className={`${styles.github} ${styles.contact_method}`}
 					>
@@ -48,6 +49,7 @@ const Contact = () => {
 					</a>
 					<a
 						href='https://www.linkedin.com/in/gizinski-jacek'
+						target='_blank'
 						rel='noreferrer'
 						className={`${styles.linkedin} ${styles.contact_method}`}
 					>
