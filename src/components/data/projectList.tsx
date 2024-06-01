@@ -8,7 +8,7 @@ export const projectList: {
 		name: 'CV Creator',
 		preview: './previews/preview_cv_creator.png',
 		github: 'https://github.com/gizinski-jacek/cv-project-react',
-		demo: 'https://cv-creator-541276.herokuapp.com',
+		demo: 'https://cv-creator-c9c2ea.netlify.app',
 	},
 	{
 		name: 'Weather App',
@@ -38,25 +38,25 @@ export const projectList: {
 		name: 'Youtube',
 		preview: './previews/preview_youtube.png',
 		github: 'https://github.com/gizinski-jacek/youtube-page',
-		demo: 'https://youtube-page-102934.herokuapp.com',
+		demo: 'https://youtube-page.onrender.com',
 	},
 	{
 		name: 'Shopping Cart',
 		preview: './previews/preview_shopping_cart.png',
 		github: 'https://github.com/gizinski-jacek/shopping-cart-react',
-		demo: 'https://shopping-cart-154325.herokuapp.com',
+		demo: 'https://shopping-cart-676k.onrender.com',
 	},
 	{
 		name: 'Blogster',
 		preview: './previews/preview_blogster.png',
 		github: 'https://github.com/gizinski-jacek/blog-API-MERN',
-		demo: 'https://blog-api-mern-360821.herokuapp.com',
+		demo: 'https://blog-api-mern.onrender.com',
 	},
 	{
 		name: 'Where is Waldo',
 		preview: './previews/preview_wheres_waldo.png',
 		github: 'https://github.com/gizinski-jacek/where-is-waldo',
-		demo: 'https://where-is-waldo-685893.herokuapp.com',
+		demo: 'https://where-is-waldo.onrender.com',
 	},
 	{
 		name: 'ToDo List',
@@ -81,13 +81,13 @@ export const projectList: {
 		name: 'Units Converter',
 		preview: './previews/preview_units_converter.png',
 		github: 'https://units-converter-opal.vercel.app',
-		demo: 'https://cv-creator-541276.herokuapp.com',
+		demo: 'https://units-converter-opal.vercel.app',
 	},
 	{
 		name: 'Inventory App',
 		preview: './previews/preview_inventory_app.png',
 		github: 'https://github.com/gizinski-jacek/inventory-app',
-		demo: 'https://inventory-app-568471.herokuapp.com',
+		demo: 'https://inventory-app-imie.onrender.com',
 	},
 	{
 		name: 'Battleships',
@@ -99,6 +99,6 @@ export const projectList: {
 		name: 'TNW Clone',
 		preview: './previews/preview_tnw_clone.png',
 		github: 'https://github.com/gizinski-jacek/responsive-design',
-		demo: 'https://responsive-design-100943.herokuapp.com',
+		demo: 'https://responsive-design-xcjt.onrender.com',
 	},
 ];
