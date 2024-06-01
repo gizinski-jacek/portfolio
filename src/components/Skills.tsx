@@ -204,7 +204,7 @@ const Skills = () => {
 							<h4>MongoDB</h4>
 						</div>
 						<div className={styles.skill_item}>
-							<img src='./icons/mongoose.png' alt='Mongoose' />
+							<img src='./icons/mongoose.webp' alt='Mongoose' />
 							<h4>Mongoose</h4>
 						</div>
 						<div className={styles.skill_item}>

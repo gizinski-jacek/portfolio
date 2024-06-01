@@ -6,7 +6,7 @@ const About = () => {
 		<div id='about' className={styles.about}>
 			<SectionHeader text={'About'} />
 			<div className={styles.container}>
-				<img src='./images/person-at-desk_5467547.png' alt='Person at desk' />
+				<img src='./images/person-at-desk_5467547.webp' alt='Person at desk' />
 				<article>
 					<p>
 						<svg
