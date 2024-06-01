@@ -9,15 +9,15 @@ const Home = () => {
 	useEffect(() => {
 		const typedOptions = {
 			backDelay: 1500,
-			backSpeed: 75,
-			typeSpeed: 100,
+			backSpeed: 50,
+			typeSpeed: 50,
 			loop: true,
 			loopCount: Infinity,
 			showCursor: false,
 			strings: [
-				'Developer',
+				'Web Developer',
 				'Engineer',
-				'PC Gamer',
+				'Gamer',
 				'Formula 1 Fan',
 				'Music Enjoyer',
 			],
