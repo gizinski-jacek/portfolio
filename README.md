@@ -4,19 +4,20 @@ Personal portfolio showcasing my projects.
 
 ## Table of contents
 
-- [Github & Live](#github--live)
-- [Getting Started](#getting-started)
-- [React](#react)
-- [Deploy](#deploy)
-- [Features](#features)
-- [Status](#status)
-- [Contact](#contact)
+- [Portfolio Website](#portfolio-website)
+  - [Table of contents](#table-of-contents)
+- [Github \& Live](#github--live)
+  - [Getting Started](#getting-started)
+  - [React](#react)
+  - [Deploy](#deploy)
+  - [Status](#status)
+  - [Contact](#contact)
 
 # Github & Live
 
 Github repo can be found [here](https://github.com/gizinski-jacek/portfolio).
 
-<!-- Live demo can be found on [Heroku](-------------). -->
+Live demo can be found [here](https://jacekgizinski.site).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
