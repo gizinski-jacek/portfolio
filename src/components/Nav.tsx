@@ -13,18 +13,6 @@ const Nav: React.FC<Props> = ({ theme, toggleTheme }) => {
 		setOpenMenu((prevState) => !prevState);
 	};
 
-	useEffect(() => {
-		const container = document.getElementById('app') as HTMLElement;
-		const watchForResize = () => {
-			if (container.offsetWidth >= 1000) {
-			}
-		};
-
-		window.addEventListener('resize', watchForResize);
-
-		return () => window.removeEventListener('resize', watchForResize);
-	}, [setOpenMenu]);
-
 	return (
 		<nav
 			id='nav'
