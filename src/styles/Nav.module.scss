@@ -10,9 +10,23 @@
 	-ms-user-select: none;
 	user-select: none;
 
+	.container {
+		position: relative;
+		width: 90px;
+		transition: width 0s ease;
+	}
+
 	ul {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
+		transition: transform 0.5s ease, visibility 0.5s ease;
+		transform: translateX(-110%);
+		visibility: hidden;
+	}
+
+	li:first-child a {
+		border-top-right-radius: 0.25rem;
 	}
 
 	svg {
@@ -25,57 +39,6 @@
 	a {
 		display: flex;
 		flex-direction: row;
-	}
-
-	li:nth-child(2) {
-		a {
-			border-top-right-radius: 0.25rem;
-		}
-	}
-
-	li:not(:first-child) {
-		transition: 0.5s ease;
-		transform-origin: left;
-		-webkit-animation: slideOut 0.5s ease forwards;
-		animation: slideOut 0.5s ease forwards;
-	}
-
-	@-webkit-keyframes slideOut {
-		0% {
-			transform: translateX(0);
-		}
-
-		100% {
-			transform: translateX(-100%);
-		}
-	}
-
-	@keyframes slideOut {
-		0% {
-			transform: translateX(0);
-		}
-
-		100% {
-			transform: translateX(-100%);
-		}
-	}
-
-	li:first-child {
-		width: -webkit-fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-		padding: 8px;
-		background-color: var(--gold);
-		transition: 0.25s ease;
-		cursor: pointer;
-	}
-
-	ul {
-		width: 51px;
-	}
-
-	li {
-		width: 90px;
 	}
 
 	a,
@@ -191,10 +154,15 @@
 	}
 
 	.ham_menu {
-		float: right;
-		display: block;
 		position: relative;
-		padding: 4px;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		display: block;
+		padding: 12px;
+		background-color: var(--gold);
+		transition: 0.25s ease;
+		cursor: pointer;
 		-webkit-user-select: none;
 		-moz-user-select: none;
 		-ms-user-select: none;
@@ -222,30 +190,9 @@
 	}
 
 	&.open_menu {
-		li:not(:first-child) {
-			transform-origin: left;
-			-webkit-animation: slideIn 0.5s ease forwards;
-			animation: slideIn 0.5s ease forwards;
-		}
-
-		@-webkit-keyframes slideIn {
-			0% {
-				transform: translateX(-100%);
-			}
-
-			100% {
-				transform: translateX(0);
-			}
-		}
-
-		@keyframes slideIn {
-			0% {
-				transform: translateX(-100%);
-			}
-
-			100% {
-				transform: translateX(0);
-			}
+		ul {
+			transform: translateX(0);
+			visibility: visible;
 		}
 
 		.ham_menu {
@@ -263,9 +210,11 @@
 			}
 		}
 	}
+}
 
-	@media only screen and (min-width: 600px) {
-		li {
+@media only screen and (min-width: 600px) {
+	.nav {
+		.container {
 			width: 120px;
 		}
 
@@ -287,49 +236,28 @@
 			margin: 2px;
 		}
 	}
+}
 
-	@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) {
+	.nav {
 		width: 100%;
 		transition: 0.5s ease;
 
+		.container {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+		}
+
 		ul {
+			flex: 1;
+			position: static;
+			width: unset;
 			flex-direction: row;
 			align-items: center;
-			width: unset;
-		}
-
-		li {
-			width: unset;
-		}
-
-		li:first-child {
-			margin-right: 0.5rem;
-		}
-
-		li:not(:first-child) {
-			transform-origin: top;
-			-webkit-animation: rotateOut 0.5s ease forwards;
-			animation: rotateOut 0.5s ease forwards;
-		}
-
-		@-webkit-keyframes rotateOut {
-			0% {
-				transform: rotateX(0);
-			}
-
-			100% {
-				transform: rotateX(90deg);
-			}
-		}
-
-		@keyframes rotateOut {
-			0% {
-				transform: rotateX(0);
-			}
-
-			100% {
-				transform: rotateX(90deg);
-			}
+			background-color: variables.$blue;
+			padding-left: 0.5rem;
+			transform: translate(0, -110%);
 		}
 
 		a,
@@ -351,62 +279,29 @@
 		}
 
 		&.open_menu {
-			background-color: variables.$blue;
-
-			li:not(:first-child) {
-				transform-origin: top;
-				-webkit-animation: rotateIn 0.5s ease forwards;
-				animation: rotateIn 0.5s ease forwards;
-			}
-
-			@-webkit-keyframes rotateIn {
-				0% {
-					transform: rotateX(90deg);
-				}
-
-				100% {
-					transform: rotateX(0);
-				}
-			}
-
-			@keyframes rotateIn {
-				0% {
-					transform: rotateX(90deg);
-				}
-
-				100% {
-					transform: rotateX(0);
-				}
+			ul {
+				transform: translateY(0);
 			}
 		}
 	}
+}
 
-	@media only screen and (min-width: 1000px) {
-		width: 100%;
-		background-color: variables.$blue;
-
+@media only screen and (min-width: 1000px) {
+	.nav {
 		ul {
+			transform: translate(0);
+			visibility: visible;
+			padding: 0;
 			flex-direction: row;
-		}
-
-		li {
-			margin: 0 0.5rem;
-			text-align: center;
-		}
-
-		li:not(:first-child) {
-			-webkit-animation: none;
-			animation: none;
-			transform: none;
-		}
-
-		li:first-child {
-			display: none;
 		}
 
 		.mode_slider_circle {
 			width: 12px;
 			height: 12px;
+		}
+
+		.ham_menu {
+			display: none;
 		}
 	}
 }
