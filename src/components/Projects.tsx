@@ -69,7 +69,7 @@ const Projects = () => {
 					</div>
 					<div
 						className={`${styles.project_item} ${styles.previousProject}`}
-						onClick={() => previousSlide()}
+						onClick={previousSlide}
 						data-slidebackward={slideBackward}
 						data-slideforward={slideForward}
 						onAnimationEnd={() => {
@@ -106,7 +106,7 @@ const Projects = () => {
 					</div>
 					<div
 						className={`${styles.project_item} ${styles.nextProject}`}
-						onClick={() => nextSlide()}
+						onClick={nextSlide}
 						data-slidebackward={slideBackward}
 						data-slideforward={slideForward}
 						onAnimationEnd={() => {
@@ -135,7 +135,7 @@ const Projects = () => {
 					</div>
 				</div>
 				<div className={styles.projects_controls}>
-					<div className={styles.arrow} onClick={() => previousSlide()}>
+					<div className={styles.arrow} onClick={previousSlide}>
 						&#10094;
 					</div>
 					<div className={styles.links}>
@@ -156,7 +156,7 @@ const Projects = () => {
 							Project Demo
 						</a>
 					</div>
-					<div className={styles.arrow} onClick={() => nextSlide()}>
+					<div className={styles.arrow} onClick={nextSlide}>
 						&#10095;
 					</div>
 				</div>
