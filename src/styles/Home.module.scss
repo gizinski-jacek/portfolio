@@ -91,7 +91,7 @@
 	top: 0;
 	display: flex;
 	flex-direction: row;
-	transition: inherit;
+	transition: 0.25s ease;
 	opacity: 0.85;
 
 	a {
@@ -149,7 +149,7 @@
 		flex-direction: column;
 
 		a {
-			transform: translateX(calc(100% - 3.5rem));
+			transform: translateX(calc(100% - 3.75rem));
 
 			&:first-child {
 				border-top-left-radius: 0.25rem;
