@@ -29,7 +29,7 @@ export const projectList: {
 	{
 		name: 'Odinbook',
 		thumbnail: './previews/thumbnail/preview_odinbook_sm.webp',
-		image: './previews/original/preview_odinbook_sm.webp',
+		image: './previews/original/preview_odinbook.webp',
 		github: 'https://github.com/gizinski-jacek/odinbook-client',
 		demo: 'https://odinbook-client-97346.netlify.app',
 	},
@@ -45,7 +45,7 @@ export const projectList: {
 		thumbnail: './previews/thumbnail/preview_online_alarm_clock_sm.webp',
 		image: './previews/original/preview_online_alarm_clock.webp',
 		github: 'https://github.com/gizinski-jacek/alarm-app',
-		demo: 'https://online-alarm-clock-35d8a.netlify.app',
+		demo: 'https://online-alarm-app.netlify.app',
 	},
 	{
 		name: 'Shopping Cart',
@@ -79,7 +79,7 @@ export const projectList: {
 		name: 'Units Converter',
 		thumbnail: './previews/thumbnail/preview_units_converter_sm.webp',
 		image: './previews/original/preview_units_converter.webp',
-		github: 'https://units-converter-opal.vercel.app',
+		github: 'https://github.com/gizinski-jacek/units-converter',
 		demo: 'https://units-converter-opal.vercel.app',
 	},
 	{
