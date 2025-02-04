@@ -30,6 +30,7 @@
 		background-color: variables.$blue;
 		border-radius: 0.5rem;
 		text-align: center;
+		cursor: pointer;
 
 		h3 {
 			font-weight: 600;
@@ -77,7 +78,6 @@
 		&.previousProject {
 			transform: translateX(-2rem);
 			opacity: 0.5;
-			cursor: pointer;
 
 			&[data-slidebackward='1'] {
 				-webkit-animation: previousToEarlier 0.75s;
@@ -195,7 +195,6 @@
 		&.nextProject {
 			transform: translateX(2rem);
 			opacity: 0.5;
-			cursor: pointer;
 
 			&[data-slidebackward='1'] {
 				-webkit-animation: nextToCurrent 0.75s;
