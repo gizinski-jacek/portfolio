@@ -6,11 +6,11 @@ export const projectList: {
 	demo: string;
 }[] = [
 	{
-		name: 'QR File Share',
-		thumbnail: './previews/thumbnail/preview_qr_file_share_sm.webp',
-		image: './previews/original/preview_qr_file_share.webp',
-		github: 'https://github.com/gizinski-jacek/qr-file-share',
-		demo: 'https://qr-file-share-umber.vercel.app',
+		name: 'MultiViewer',
+		thumbnail: './previews/thumbnail/preview_multi_viewer_sm.webp',
+		image: './previews/original/preview_multi_viewer.webp',
+		github: 'https://github.com/gizinski-jacek/multi-viewer',
+		demo: 'https://multi-viewer-one.vercel.app/watch',
 	},
 	{
 		name: 'Weather App',
@@ -32,6 +32,13 @@ export const projectList: {
 		image: './previews/original/preview_odinbook.webp',
 		github: 'https://github.com/gizinski-jacek/odinbook-client',
 		demo: 'https://odinbook-client-97346.netlify.app',
+	},
+	{
+		name: 'SyncVideo',
+		thumbnail: './previews/thumbnail/preview_sync_video_sm.webp',
+		image: './previews/original/preview_sync_video.webp',
+		github: 'https://github.com/gizinski-jacek/sync-video',
+		demo: 'https://sync-video-delta.vercel.app',
 	},
 	{
 		name: 'Youtube',
@@ -116,5 +123,12 @@ export const projectList: {
 		image: './previews/original/preview_cv_creator.webp',
 		github: 'https://github.com/gizinski-jacek/cv-project-react',
 		demo: 'https://cv-creator-c9c2ea.netlify.app',
+	},
+	{
+		name: 'QR File Share',
+		thumbnail: './previews/thumbnail/preview_qr_file_share_sm.webp',
+		image: './previews/original/preview_qr_file_share.webp',
+		github: 'https://github.com/gizinski-jacek/qr-file-share',
+		demo: 'https://qr-file-share-umber.vercel.app',
 	},
 ];
