@@ -2,11 +2,12 @@ import { useState } from 'react';
 import SectionHeader from './reusables/SectionHeader';
 import { projectList } from './data/projectList';
 import styles from '../styles/Projects.module.scss';
+import Modal from './Modal';
 
 declare module 'react' {
 	export interface HTMLAttributes<T> {
-		'data-slidebackward'?: any;
-		'data-slideforward'?: any;
+		'data-slidebackward'?: number;
+		'data-slideforward'?: number;
 	}
 }
 
@@ -18,6 +19,7 @@ const Projects = () => {
 	const [currentProject, setCurrentProject] = useState(2);
 	const [nextProject, setNextProject] = useState(3);
 	const [laterProject, setLaterProject] = useState(4);
+	const [modalIsOpen, setModalIsOpen] = useState(false);
 
 	const previousSlide = () => {
 		setSlideForward(1);
@@ -47,6 +49,16 @@ const Projects = () => {
 				setLaterProject((prevState) => prevState + 1);
 			}
 		}, 750);
+	};
+
+	const openModal = () => {
+		document.body.style.overflowY = 'hidden';
+		setModalIsOpen(true);
+	};
+
+	const closeModal = () => {
+		document.body.style.overflowY = 'auto';
+		setModalIsOpen(false);
 	};
 
 	return (
@@ -91,17 +103,12 @@ const Projects = () => {
 							setSlideBackward(0);
 							setSlideForward(0);
 						}}
+						onClick={openModal}
 					>
-						<a
-							href={projectList[currentProject].image}
-							target='_blank'
-							rel='noreferrer'
-						>
-							<img
-								src={projectList[currentProject].thumbnail}
-								alt={projectList[currentProject].name}
-							/>
-						</a>
+						<img
+							src={projectList[currentProject].thumbnail}
+							alt={projectList[currentProject].name}
+						/>
 						<h3>{projectList[currentProject].name}</h3>
 					</div>
 					<div
@@ -161,6 +168,20 @@ const Projects = () => {
 					</div>
 				</div>
 			</div>
+			{modalIsOpen && (
+				<Modal closeModal={closeModal}>
+					<img
+						style={{
+							width: 'auto',
+							maxWidth: '100%',
+							height: 'auto',
+							maxHeight: '100%',
+						}}
+						src={projectList[currentProject].image}
+						alt={projectList[currentProject].name || 'Project preview'}
+					/>
+				</Modal>
+			)}
 		</div>
 	);
 };
