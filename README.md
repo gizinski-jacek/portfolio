@@ -17,7 +17,7 @@ Personal portfolio showcasing my projects.
 
 Github repo can be found [here](https://github.com/gizinski-jacek/portfolio).
 
-Live demo can be found [here](https://jacekgizinski.site).
+Live demo can be found [here](https://jacekgizinski.cfd).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
