@@ -20,7 +20,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		transition: transform 0.5s ease, visibility 0.5s ease;
+		transition: transform 0.25s ease, visibility 0.5s ease;
 		transform: translateX(-110%);
 		visibility: hidden;
 	}
@@ -66,6 +66,7 @@
 
 	.mode {
 		display: flex;
+		gap: 0.5rem;
 
 		&.dark {
 			.moon {
@@ -90,7 +91,6 @@
 		width: 1rem;
 		height: 1rem;
 		display: grid;
-		margin-right: 0.5rem;
 
 		svg {
 			margin: 0;
@@ -106,7 +106,6 @@
 		height: -webkit-fit-content;
 		height: -moz-fit-content;
 		height: fit-content;
-		margin-left: 0.5rem;
 		border-radius: 1rem;
 		background-color: var(--primary);
 		transition: 0.5s ease;
@@ -158,6 +157,9 @@
 		width: -webkit-fit-content;
 		width: -moz-fit-content;
 		width: fit-content;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
 		display: block;
 		padding: 12px;
 		background-color: var(--gold);
@@ -168,6 +170,7 @@
 		-ms-user-select: none;
 		user-select: none;
 		z-index: 1;
+		border-bottom-right-radius: 0.5rem;
 
 		span {
 			display: block;
@@ -175,7 +178,7 @@
 			height: 4px;
 			position: relative;
 			background: variables.$black;
-			border-radius: 200px;
+			border-radius: 1rem;
 			z-index: 1;
 			transition: 0.5s ease;
 		}
@@ -196,6 +199,8 @@
 		}
 
 		.ham_menu {
+			border-bottom-right-radius: 0;
+
 			span:first-child {
 				transform: translate(0px, 9px) rotate(45deg);
 			}

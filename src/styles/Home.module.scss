@@ -104,6 +104,10 @@
 		border: 2px solid transparent;
 		transition: 0.25s ease;
 
+		&:first-child {
+			border-bottom-left-radius: 0.5rem;
+		}
+
 		&:hover {
 			-webkit-filter: brightness(110%);
 			filter: brightness(110%);
@@ -152,7 +156,7 @@
 			transform: translateX(calc(100% - 3.75rem));
 
 			&:first-child {
-				border-top-left-radius: 0.25rem;
+				border-bottom-left-radius: 0;
 			}
 
 			&:last-child {
@@ -165,6 +169,10 @@
 				border-bottom-left-radius: 0.25rem;
 				-webkit-filter: brightness(110%);
 				filter: brightness(110%);
+
+				&:first-child {
+					border-top-left-radius: 0.25rem;
+				}
 			}
 
 			&:active {
@@ -182,5 +190,17 @@
 @media only screen and (min-width: 800px) {
 	.socials {
 		top: 70vh;
+
+		a {
+			&:first-child {
+				border-top-left-radius: 0.25rem;
+
+				&:hover {
+					&:first-child {
+						border-top-left-radius: 0.25rem;
+					}
+				}
+			}
+		}
 	}
 }
