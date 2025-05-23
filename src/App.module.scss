@@ -3,7 +3,8 @@
 	width: 100%;
 	color: var(--secondary);
 	background-color: var(--primary);
-	transition: 0.75s ease;
+	transition: 0.75s ease, width 0s ease;
 	display: flex;
 	flex-direction: column;
+	overflow-x: hidden;
 }
