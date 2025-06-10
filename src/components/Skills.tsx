@@ -7,7 +7,7 @@ const Skills = () => {
 			<SectionHeader text={'Skills & Tools'} />
 			<div className={styles.section_skills}>
 				<div className={styles.container}>
-					<h3>Frontend</h3>
+					<h3>Front-end</h3>
 					<div className={styles.card}>
 						<div className={styles.skill_item}>
 							<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'>
@@ -166,7 +166,7 @@ const Skills = () => {
 					</div>
 				</div>
 				<div className={styles.container}>
-					<h3>Backend</h3>
+					<h3>Back-end</h3>
 					<div className={styles.card}>
 						<div className={styles.skill_item}>
 							<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'>
